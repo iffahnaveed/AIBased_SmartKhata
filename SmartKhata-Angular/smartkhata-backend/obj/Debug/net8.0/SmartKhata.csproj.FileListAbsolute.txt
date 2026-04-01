@@ -194,3 +194,4 @@ D:\SmartKhata-Angular\SmartKhata-Angular\smartkhata-backend\obj\Debug\net8.0\ref
 D:\SmartKhata-Angular\SmartKhata-Angular\smartkhata-backend\obj\Debug\net8.0\SmartKhata.pdb
 D:\SmartKhata-Angular\SmartKhata-Angular\smartkhata-backend\obj\Debug\net8.0\SmartKhata.genruntimeconfig.cache
 D:\SmartKhata-Angular\SmartKhata-Angular\smartkhata-backend\obj\Debug\net8.0\ref\SmartKhata.dll
+D:\AIBased_SmartKhata\SmartKhata-Angular\smartkhata-backend\obj\Debug\net8.0\SmartKhata.sourcelink.json

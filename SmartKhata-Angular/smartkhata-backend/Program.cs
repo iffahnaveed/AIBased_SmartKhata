@@ -15,9 +15,8 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod());
 });
-
+builder.Services.AddHttpClient();
 var app = builder.Build();
-
 app.UseCors("AllowAngular");
 app.UseAuthorization();
 app.MapControllers();

@@ -1,0 +1,25 @@
+# Node / Angular
+SmartKhata-Angular/smartkhata-angular/node_modules/
+SmartKhata-Angular/smartkhata-angular/dist/
+SmartKhata-Angular/smartkhata-angular/.angular/
+
+# Backend C# build
+smartkhata-backend/bin/
+smartkhata-backend/obj/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional: don't push executables
+uvicorn
