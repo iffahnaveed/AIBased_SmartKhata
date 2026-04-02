@@ -331,9 +331,17 @@ export class SalesComponent implements OnInit {
 
   if (this.form.paymentType === 'udhar' && !this.form.customer.trim()) return;
 
-  // ✅ Date validation
   if (this.form.date !== this.today) {
     alert('Only today\'s date is allowed.');
+    return;
+  }
+
+  const stockItem = this.stockApi.stockItems()
+    .find(i => i.name === this.form.product);
+
+  // ❌ Prevent selling more than available stock
+  if (stockItem && this.form.quantity > stockItem.quantity) {
+    alert(`Only ${stockItem.quantity} ${stockItem.unit} available in stock`);
     return;
   }
 
@@ -343,7 +351,19 @@ export class SalesComponent implements OnInit {
     : this.api.create(this.form);
 
   call.subscribe({
-    next: () => { this.applyFilters(); this.closeModal(); }
+    next: () => {
+
+      // ✅ IMPORTANT: update stock AFTER sale saved
+      if (stockItem) {
+        this.stockApi.quickUpdate(stockItem.id, {
+          action: 'subtract',
+          quantity: this.form.quantity
+        }).subscribe();
+      }
+
+      this.applyFilters();
+      this.closeModal();
+    }
   });
 }
 

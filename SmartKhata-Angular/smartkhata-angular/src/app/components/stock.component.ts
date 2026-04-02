@@ -1,4 +1,4 @@
-import { Component, inject, computed, signal, OnInit } from '@angular/core';
+import { Component, inject, computed, signal, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StockApiService, StockItem, StockItemRequest } from '../services/stockapi.service';
@@ -32,6 +32,7 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
       </div>
     }
 
+    
     <div class="stats-grid">
       <div class="stat-card navy">
         <div class="stat-label">Total Products</div>
@@ -191,10 +192,13 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
             </div>
             <div class="form-group">
               <label class="form-label">Quantity</label>
-              <input class="form-input" type="number" min="1"
-                placeholder="Enter quantity"
-                [(ngModel)]="quickUpdate.quantity"
-                (input)="clampQuickQty()" />
+              <input class="form-input"
+  type="number"
+  min="1"
+  [(ngModel)]="quickUpdate.quantity"
+  (keydown)="preventNegative($event)"
+  (paste)="preventPasteNegative($event)"
+  (input)="clampQuickQty()" />
             </div>
             <button class="btn btn-primary" style="width:100%;" (click)="applyQuickUpdate()">Apply Update</button>
           </div>
@@ -223,12 +227,18 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
 
             <div class="form-group">
               <label class="form-label">Product Name *</label>
-              <input class="form-input" type="text" placeholder="e.g. Sugar" [(ngModel)]="form.name" />
+              <input class="form-input"
+                type="text"
+                placeholder="e.g. Sugar"
+                [(ngModel)]="form.name"
+                (input)="checkExistingProduct()" />
             </div>
 
             <div class="form-group">
               <label class="form-label">Category</label>
-              <select class="form-select" [(ngModel)]="form.category" (change)="onCategoryChange()">
+              <select class="form-select"
+                [(ngModel)]="form.category"
+                [disabled]="isExistingProduct()">
                 @for (cat of categories; track cat) {
                   <option [value]="cat">{{ cat }}</option>
                 }
@@ -237,15 +247,25 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
 
             <div class="form-group">
               <label class="form-label">Quantity *</label>
-              <input class="form-input" type="number" min="1"
-                [(ngModel)]="form.quantity"
-                (input)="clampQty()" />
-              <span style="font-size:11px;color:var(--beige-600);">Must be 1 or more</span>
+             <input class="form-input"
+  type="number"
+  min="1"
+  [(ngModel)]="form.quantity"
+  (keydown)="preventNegative($event)"
+  (paste)="preventPasteNegative($event)"
+  (input)="clampQty()" />
+              @if (form.quantity < 1) {
+                <span style="font-size:11px;color:var(--red-text);">
+                  ⚠️ Quantity must be at least 1
+                </span>
+              }
             </div>
 
             <div class="form-group">
               <label class="form-label">Unit</label>
-              <select class="form-select" [(ngModel)]="form.unit">
+              <select class="form-select"
+                [(ngModel)]="form.unit"
+                [disabled]="isExistingProduct()">
                 @for (u of allowedUnits(); track u) {
                   <option [value]="u">{{ u }}</option>
                 }
@@ -254,8 +274,10 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
 
             <div class="form-group">
               <label class="form-label">Purchase Price (PKR) *</label>
-              <input class="form-input" type="number" min="0"
+              <input class="form-input"
+                type="number"
                 [(ngModel)]="form.purchasePrice"
+                [disabled]="isExistingProduct()"
                 (input)="clampPurchase()" />
             </div>
 
@@ -263,6 +285,7 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
               <label class="form-label">Selling Price (PKR) *</label>
               <input class="form-input" type="number" min="0"
                 [(ngModel)]="form.sellingPrice"
+                [disabled]="isExistingProduct()"
                 (input)="clampSelling()" />
               @if (form.sellingPrice > 0 && form.sellingPrice < form.purchasePrice) {
                 <span style="font-size:11px;color:var(--red-text);">
@@ -275,8 +298,14 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
 
           <div style="display:flex;gap:10px;margin-top:16px;">
             <button class="btn btn-primary" style="flex:1;"
-              (click)="saveItem()" [disabled]="api.loading()">
-              {{ editingItem() ? 'Update Product' : 'Add Product' }}
+              (click)="saveItem()"
+              [disabled]="
+                api.loading() ||
+                form.quantity < 1 ||
+                form.purchasePrice < 0 ||
+                form.sellingPrice < form.purchasePrice
+              ">
+              {{ isExistingProduct() ? 'Update Quantity' : 'Add Product' }}
             </button>
             <button class="btn btn-ghost" (click)="closeModal()">Cancel</button>
           </div>
@@ -296,10 +325,12 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
     .modal-box { background:white;border-radius:14px;padding:24px;width:520px;max-width:95vw;box-shadow:0 20px 60px rgba(0,0,0,0.15); }
     .data-table { min-width:780px;width:100%; }
   `]
+  
 })
 export class StockComponent implements OnInit {
   api           = inject(StockApiService);
   private router = inject(Router);
+  private cdr    = inject(ChangeDetectorRef);
 
   showModal    = signal(false);
   editingItem  = signal<StockItem | null>(null);
@@ -309,7 +340,7 @@ export class StockComponent implements OnInit {
 
   searchQuery = '';
   categories  = CATEGORIES;
-
+  isExistingProduct = signal(false);
   form: StockItemRequest = this.blankForm();
 
   quickUpdate = {
@@ -335,7 +366,9 @@ export class StockComponent implements OnInit {
   lowStockItems   = computed(() => this.api.stockItems().filter(i => i.status !== 'in-stock'));
 
   /** Units allowed for the currently selected category */
-  allowedUnits = computed(() => CATEGORY_UNITS[this.form.category] ?? CATEGORY_UNITS['Other']);
+  allowedUnits() {
+    return CATEGORY_UNITS[this.form.category] ?? CATEGORY_UNITS['Other'];
+  }
 
   // ── Init ─────────────────────────────────────────────────────
   ngOnInit() {
@@ -346,6 +379,26 @@ export class StockComponent implements OnInit {
     this.api.loadAll().subscribe();
   }
 
+  checkExistingProduct() {
+    const name = this.form.name.trim().toLowerCase();
+
+    const existing = this.api.stockItems().find(
+      i => i.name.toLowerCase() === name
+    );
+
+    if (existing) {
+      // fill all fields except quantity
+      this.form.category = existing.category;
+      this.form.unit = existing.unit;
+      this.form.purchasePrice = existing.purchasePrice;
+      this.form.sellingPrice = existing.sellingPrice;
+
+      this.isExistingProduct.set(true);
+    } else {
+      this.isExistingProduct.set(false);
+    }
+  }
+
   // ── Category change → reset unit to first allowed ────────────
   onCategoryChange() {
     const units = CATEGORY_UNITS[this.form.category] ?? CATEGORY_UNITS['Other'];
@@ -353,10 +406,15 @@ export class StockComponent implements OnInit {
   }
 
   // ── Clamps ───────────────────────────────────────────────────
-  clampQty()      { if (this.form.quantity      < 1) this.form.quantity      = 1; }
+clampQty() {
+  this.form.quantity = Math.max(1, Number(this.form.quantity) || 1);
+}
+
+clampQuickQty() {
+  this.quickUpdate.quantity = Math.max(1, Number(this.quickUpdate.quantity) || 1);
+}
   clampPurchase() { if (this.form.purchasePrice < 0) this.form.purchasePrice = 0; }
   clampSelling()  { if (this.form.sellingPrice  < 0) this.form.sellingPrice  = 0; }
-  clampQuickQty() { if (this.quickUpdate.quantity < 1) this.quickUpdate.quantity = 1; }
 
   // ── Modal ────────────────────────────────────────────────────
   openAddModal() {
@@ -366,66 +424,93 @@ export class StockComponent implements OnInit {
     this.showModal.set(true);
   }
 
- 
   closeModal() {
     this.showModal.set(false);
     this.editingItem.set(null);
     this.modalError.set('');
   }
+preventNegative(event: KeyboardEvent) {
+  if (event.key === '-' || event.key === 'e' || event.key === '+') {
+    event.preventDefault();
+  }
+}
 
+preventPasteNegative(event: ClipboardEvent) {
+  const pasted = event.clipboardData?.getData('text');
+  if (pasted && Number(pasted) < 0) {
+    event.preventDefault();
+  }
+}
   // ── Save (add or edit) ───────────────────────────────────────
   saveItem() {
     this.modalError.set('');
 
-    // 1. Name required
     if (!this.form.name.trim()) {
       this.modalError.set('Product name is required.');
       return;
     }
 
-    // 2. Quantity at least 1
     if (this.form.quantity < 1) {
       this.modalError.set('Quantity must be at least 1.');
       return;
     }
 
-    // 3. No negative prices
-    if (this.form.purchasePrice < 0) {
-      this.modalError.set('Purchase price cannot be negative.');
-      return;
-    }
-    if (this.form.sellingPrice < 0) {
-      this.modalError.set('Selling price cannot be negative.');
+    const existing = this.api.stockItems().find(
+      i => i.name.toLowerCase() === this.form.name.trim().toLowerCase()
+    );
+
+    // ✅ CASE 1: Existing product → UPDATE quantity
+    if (existing) {
+      this.api.quickUpdate(existing.id, {
+        action: 'add',
+        quantity: this.form.quantity
+      }).subscribe({
+        next: () => this.closeModal(),
+        error: () => this.modalError.set('Failed to update quantity.')
+      });
+
       return;
     }
 
-    // 4. Selling price must be ≥ purchase price
+    // ✅ CASE 2: New product → NORMAL CREATE
+    if (this.form.purchasePrice < 0 || this.form.sellingPrice < 0) {
+      this.modalError.set('Prices cannot be negative.');
+      return;
+    }
+
     if (this.form.sellingPrice < this.form.purchasePrice) {
-      this.modalError.set(
-        `Selling price (PKR ${this.form.sellingPrice}) must be ≥ purchase price (PKR ${this.form.purchasePrice}).`
-      );
+      this.modalError.set('Selling price must be ≥ purchase price.');
       return;
     }
 
-    // 6. Unit must be valid for category
     const allowed = CATEGORY_UNITS[this.form.category] ?? [];
     if (!allowed.includes(this.form.unit)) {
-      this.modalError.set(`Unit "${this.form.unit}" is not valid for category "${this.form.category}".`);
+      this.modalError.set('Invalid unit for selected category.');
       return;
     }
 
-    const editing  = this.editingItem();
-    const request$ = editing
-      ? this.api.update(editing.id, this.form)
-      : this.api.create(this.form);
-
-    request$.subscribe({
-      next:  () => this.closeModal(),
-      error: () => this.modalError.set('Operation failed. Please try again.')
+    this.api.create(this.form).subscribe({
+      next: () => this.closeModal(),
+      error: () => this.modalError.set('Failed to add product.')
     });
   }
 
-  // ── Delete ───────────────────────────────────────────────────
+  // ── Field change helpers ─────────────────────────────────────
+  onPurchaseChange() {
+    if (this.form.purchasePrice < 0) {
+      this.form.purchasePrice = 0;
+    }
+    // auto-fix selling if invalid
+    if (this.form.sellingPrice < this.form.purchasePrice) {
+      this.form.sellingPrice = this.form.purchasePrice;
+    }
+  }
+
+  onSellingChange() {
+    if (this.form.sellingPrice < 0) {
+      this.form.sellingPrice = 0;
+    }
+  }
 
   // ── Quick update ─────────────────────────────────────────────
   applyQuickUpdate() {
