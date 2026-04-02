@@ -1,11 +1,22 @@
-// src/app/pages/stock/stock.component.ts
-// Key change: replaces local signal with StockApiService calls
 import { Component, inject, computed, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StockApiService, StockItem, StockItemRequest } from '../services/stockapi.service';
 import { PkrPipe } from '../shared/pkr.pipe';
 import { Router } from '@angular/router';
+
+// ── Category → allowed units map ──────────────────────────────────────────
+const CATEGORY_UNITS: Record<string, string[]> = {
+  Grocery:   ['kg', 'g', 'pack', 'box'],
+  Dairy:     ['litre', 'pcs', 'dozen', 'pack'],
+  Beverages: ['litre', 'pcs', 'pack', 'box', 'dozen'],
+  Bakery:    ['pcs', 'dozen', 'pack', 'box'],
+  Household: ['pcs', 'pack', 'box', 'dozen'],
+  Other:     ['kg', 'g', 'litre', 'pcs', 'pack', 'box'],
+};
+
+const CATEGORIES = Object.keys(CATEGORY_UNITS);
+
 @Component({
   selector: 'app-stock',
   standalone: true,
@@ -58,55 +69,58 @@ import { Router } from '@angular/router';
           <div style="display:flex;gap:10px;align-items:center;">
             <input class="search-input" type="text" placeholder="Search products…" [(ngModel)]="searchQuery" />
             <button class="btn btn-primary btn-sm" (click)="openAddModal()">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
               Add Item
             </button>
           </div>
         </div>
 
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Category</th>
-              <th>Qty / Unit</th>
-              <th>Purchase Price</th>
-              <th>Selling Price</th>
-              <th>Last Updated</th>
-              <th>Status</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            @for (item of filteredStock(); track item.id) {
+        <!-- ✅ overflow-x:auto ensures Actions column is always reachable -->
+        <div style="overflow-x:auto;">
+          <table class="data-table">
+            <thead>
               <tr>
-                <td><strong>{{ item.name }}</strong></td>
-                <td style="color:var(--beige-700)">{{ item.category }}</td>
-                <td>
-                  <span style="font-weight:600;">{{ item.quantity }}</span>
-                  <span style="color:var(--beige-700);font-size:11px;margin-left:4px;">{{ item.unit }}</span>
-                </td>
-                <td>{{ item.purchasePrice | pkr }}</td>
-                <td>{{ item.sellingPrice | pkr }}</td>
-                <td style="color:var(--beige-700)">{{ item.lastUpdated | date:'dd MMM' }}</td>
-                <td>
-                  <span class="badge" [ngClass]="statusBadge(item.status)">{{ item.status | titlecase }}</span>
-                </td>
-                <td>
-                  <div style="display:flex;gap:6px;">
-                    <button class="btn btn-ghost btn-sm" (click)="openEditModal(item)">Edit</button>
-                    <button class="btn btn-ghost btn-sm" style="color:var(--red-500)" (click)="deleteItem(item.id)">Delete</button>
-                  </div>
-                </td>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Qty / Unit</th>
+                <th>Purchase Price</th>
+                <th>Selling Price</th>
+                <th>Last Updated</th>
+                <th>Status</th>
               </tr>
-            }
-            @empty {
-              <tr>
-                <td colspan="8" style="text-align:center;color:var(--beige-700);padding:32px;">No products found.</td>
-              </tr>
-            }
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              @for (item of filteredStock(); track item.id) {
+                <tr>
+                  <td><strong>{{ item.name }}</strong></td>
+                  <td style="color:var(--beige-700)">{{ item.category }}</td>
+                  <td>
+                    <span style="font-weight:600;">{{ item.quantity }}</span>
+                    <span style="color:var(--beige-700);font-size:11px;margin-left:4px;">{{ item.unit }}</span>
+                  </td>
+                  <td>{{ item.purchasePrice | pkr }}</td>
+                  <td>{{ item.sellingPrice | pkr }}</td>
+                  <td style="color:var(--beige-700)">{{ item.lastUpdated | date:'dd MMM' }}</td>
+                  <td>
+                    <span class="badge" [ngClass]="statusBadge(item.status)">{{ item.status | titlecase }}</span>
+                  </td>
+                  <td>
+                  
+                 <span style="color:var(--beige-500);font-size:12px;">—</span>
+
+                  </td>
+                </tr>
+              }
+              @empty {
+                <tr>
+                  <td colspan="8" style="text-align:center;color:var(--beige-700);padding:32px;">No products found.</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:20px;">
@@ -141,6 +155,18 @@ import { Router } from '@angular/router';
             <div class="card-title">Quick Stock Update</div>
           </div>
           <div class="card-body">
+
+            @if (quickError()) {
+              <div style="background:var(--red-bg);color:var(--red-text);border-radius:6px;padding:8px 12px;font-size:12px;margin-bottom:10px;">
+                {{ quickError() }}
+              </div>
+            }
+            @if (quickSuccess()) {
+              <div style="background:var(--green-bg);color:var(--green-text);border-radius:6px;padding:8px 12px;font-size:12px;margin-bottom:10px;">
+                {{ quickSuccess() }}
+              </div>
+            }
+
             <div class="form-group">
               <label class="form-label">Select Product</label>
               <select class="form-select" [(ngModel)]="quickUpdate.productId">
@@ -165,7 +191,10 @@ import { Router } from '@angular/router';
             </div>
             <div class="form-group">
               <label class="form-label">Quantity</label>
-              <input class="form-input" type="number" min="1" placeholder="Enter quantity" [(ngModel)]="quickUpdate.quantity" />
+              <input class="form-input" type="number" min="1"
+                placeholder="Enter quantity"
+                [(ngModel)]="quickUpdate.quantity"
+                (input)="clampQuickQty()" />
             </div>
             <button class="btn btn-primary" style="width:100%;" (click)="applyQuickUpdate()">Apply Update</button>
           </div>
@@ -174,51 +203,84 @@ import { Router } from '@angular/router';
       </div>
     </div>
 
+    <!-- ── ADD / EDIT MODAL ─────────────────────────────────── -->
     @if (showModal()) {
       <div class="modal-backdrop" (click)="closeModal()">
         <div class="modal-box" (click)="$event.stopPropagation()">
+
           <div class="card-header" style="border-bottom:1px solid var(--beige-200);margin-bottom:20px;">
             <div class="card-title">{{ editingItem() ? 'Edit Product' : 'Add New Product' }}</div>
             <button class="btn btn-ghost btn-sm" (click)="closeModal()">✕</button>
           </div>
+
+          @if (modalError()) {
+            <div style="background:var(--red-bg);color:var(--red-text);border-radius:6px;padding:10px 14px;font-size:12.5px;margin-bottom:14px;display:flex;gap:8px;align-items:center;">
+              ⚠️ {{ modalError() }}
+            </div>
+          }
+
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
             <div class="form-group">
               <label class="form-label">Product Name *</label>
               <input class="form-input" type="text" placeholder="e.g. Sugar" [(ngModel)]="form.name" />
             </div>
+
             <div class="form-group">
               <label class="form-label">Category</label>
-              <select class="form-select" [(ngModel)]="form.category">
-                <option>Grocery</option><option>Dairy</option><option>Beverages</option>
-                <option>Bakery</option><option>Household</option><option>Other</option>
+              <select class="form-select" [(ngModel)]="form.category" (change)="onCategoryChange()">
+                @for (cat of categories; track cat) {
+                  <option [value]="cat">{{ cat }}</option>
+                }
               </select>
             </div>
+
             <div class="form-group">
               <label class="form-label">Quantity *</label>
-              <input class="form-input" type="number" min="0" [(ngModel)]="form.quantity" />
+              <input class="form-input" type="number" min="1"
+                [(ngModel)]="form.quantity"
+                (input)="clampQty()" />
+              <span style="font-size:11px;color:var(--beige-600);">Must be 1 or more</span>
             </div>
+
             <div class="form-group">
               <label class="form-label">Unit</label>
               <select class="form-select" [(ngModel)]="form.unit">
-                <option>kg</option><option>g</option><option>litre</option>
-                <option>pcs</option><option>dozen</option><option>box</option><option>pack</option>
+                @for (u of allowedUnits(); track u) {
+                  <option [value]="u">{{ u }}</option>
+                }
               </select>
             </div>
+
             <div class="form-group">
               <label class="form-label">Purchase Price (PKR) *</label>
-              <input class="form-input" type="number" min="0" [(ngModel)]="form.purchasePrice" />
+              <input class="form-input" type="number" min="0"
+                [(ngModel)]="form.purchasePrice"
+                (input)="clampPurchase()" />
             </div>
+
             <div class="form-group">
               <label class="form-label">Selling Price (PKR) *</label>
-              <input class="form-input" type="number" min="0" [(ngModel)]="form.sellingPrice" />
+              <input class="form-input" type="number" min="0"
+                [(ngModel)]="form.sellingPrice"
+                (input)="clampSelling()" />
+              @if (form.sellingPrice > 0 && form.sellingPrice < form.purchasePrice) {
+                <span style="font-size:11px;color:var(--red-text);">
+                  ⚠️ Selling price must be ≥ purchase price ({{ form.purchasePrice | pkr }})
+                </span>
+              }
             </div>
+
           </div>
+
           <div style="display:flex;gap:10px;margin-top:16px;">
-            <button class="btn btn-primary" style="flex:1;" (click)="saveItem()" [disabled]="api.loading()">
+            <button class="btn btn-primary" style="flex:1;"
+              (click)="saveItem()" [disabled]="api.loading()">
               {{ editingItem() ? 'Update Product' : 'Add Product' }}
             </button>
             <button class="btn btn-ghost" (click)="closeModal()">Cancel</button>
           </div>
+
         </div>
       </div>
     }
@@ -232,20 +294,21 @@ import { Router } from '@angular/router';
     .form-input:focus,.form-select:focus { border-color:var(--navy-400); }
     .modal-backdrop { position:fixed;inset:0;background:rgba(0,0,0,0.35);backdrop-filter:blur(2px);z-index:200;display:flex;align-items:center;justify-content:center; }
     .modal-box { background:white;border-radius:14px;padding:24px;width:520px;max-width:95vw;box-shadow:0 20px 60px rgba(0,0,0,0.15); }
+    .data-table { min-width:780px;width:100%; }
   `]
 })
 export class StockComponent implements OnInit {
-  api = inject(StockApiService);
+  api           = inject(StockApiService);
   private router = inject(Router);
 
-  showModal   = signal(false);
-  editingItem = signal<StockItem | null>(null);
-
-  errorMsg   = signal('');
-  successMsg = signal('');
-  isLoading  = signal(false);
+  showModal    = signal(false);
+  editingItem  = signal<StockItem | null>(null);
+  modalError   = signal('');
+  quickError   = signal('');
+  quickSuccess = signal('');
 
   searchQuery = '';
+  categories  = CATEGORIES;
 
   form: StockItemRequest = this.blankForm();
 
@@ -255,192 +318,169 @@ export class StockComponent implements OnInit {
     quantity: 1
   };
 
-  // ================= COMPUTED =================
+  // ── Computed ────────────────────────────────────────────────
   filteredStock = computed(() => {
     const q = this.searchQuery.toLowerCase();
     return q
       ? this.api.stockItems().filter(i =>
           i.name.toLowerCase().includes(q) ||
-          i.category.toLowerCase().includes(q)
-        )
+          i.category.toLowerCase().includes(q))
       : this.api.stockItems();
   });
 
-  inStockCount = computed(() =>
-    this.api.stockItems().filter(i => i.status === 'in-stock').length
-  );
+  inStockCount    = computed(() => this.api.stockItems().filter(i => i.status === 'in-stock').length);
+  lowStockCount   = computed(() => this.api.stockItems().filter(i => i.status === 'low-stock').length);
+  outOfStockCount = computed(() => this.api.stockItems().filter(i => i.status === 'out-of-stock').length);
+  totalStockValue = computed(() => this.api.stockItems().reduce((s, i) => s + i.purchasePrice * i.quantity, 0));
+  lowStockItems   = computed(() => this.api.stockItems().filter(i => i.status !== 'in-stock'));
 
-  lowStockCount = computed(() =>
-    this.api.stockItems().filter(i => i.status === 'low-stock').length
-  );
+  /** Units allowed for the currently selected category */
+  allowedUnits = computed(() => CATEGORY_UNITS[this.form.category] ?? CATEGORY_UNITS['Other']);
 
-  outOfStockCount = computed(() =>
-    this.api.stockItems().filter(i => i.status === 'out-of-stock').length
-  );
-
-  totalStockValue = computed(() =>
-    this.api.stockItems().reduce(
-      (sum, i) => sum + i.purchasePrice * i.quantity,
-      0
-    )
-  );
-
-  lowStockItems = computed(() =>
-    this.api.stockItems().filter(i => i.status !== 'in-stock')
-  );
-
-  // ================= INIT =================
+  // ── Init ─────────────────────────────────────────────────────
   ngOnInit() {
     if (!sessionStorage.getItem('sk_logged_in')) {
       this.router.navigate(['/login']);
       return;
     }
-
-    this.loadStock();
+    this.api.loadAll().subscribe();
   }
 
-  loadStock() {
-    this.errorMsg.set('');
-    this.successMsg.set('');
-    this.isLoading.set(true);
-
-    this.api.loadAll().subscribe({
-      next: () => {
-        this.isLoading.set(false);
-      },
-      error: () => {
-        this.isLoading.set(false);
-        this.errorMsg.set('Failed to load stock from server.');
-      }
-    });
+  // ── Category change → reset unit to first allowed ────────────
+  onCategoryChange() {
+    const units = CATEGORY_UNITS[this.form.category] ?? CATEGORY_UNITS['Other'];
+    this.form.unit = units[0];
   }
 
-  // ================= MODAL =================
+  // ── Clamps ───────────────────────────────────────────────────
+  clampQty()      { if (this.form.quantity      < 1) this.form.quantity      = 1; }
+  clampPurchase() { if (this.form.purchasePrice < 0) this.form.purchasePrice = 0; }
+  clampSelling()  { if (this.form.sellingPrice  < 0) this.form.sellingPrice  = 0; }
+  clampQuickQty() { if (this.quickUpdate.quantity < 1) this.quickUpdate.quantity = 1; }
+
+  // ── Modal ────────────────────────────────────────────────────
   openAddModal() {
     this.editingItem.set(null);
     this.form = this.blankForm();
+    this.modalError.set('');
     this.showModal.set(true);
   }
 
-  openEditModal(item: StockItem) {
-    this.editingItem.set(item);
-    this.form = {
-      name: item.name,
-      category: item.category,
-      quantity: item.quantity,
-      unit: item.unit,
-      purchasePrice: item.purchasePrice,
-      sellingPrice: item.sellingPrice
-    };
-    this.showModal.set(true);
-  }
-
+ 
   closeModal() {
     this.showModal.set(false);
     this.editingItem.set(null);
+    this.modalError.set('');
   }
 
-  // ================= CRUD =================
+  // ── Save (add or edit) ───────────────────────────────────────
   saveItem() {
-    this.errorMsg.set('');
-    this.successMsg.set('');
+    this.modalError.set('');
 
+    // 1. Name required
     if (!this.form.name.trim()) {
-      this.errorMsg.set('Product name is required.');
+      this.modalError.set('Product name is required.');
       return;
     }
 
-    this.isLoading.set(true);
+    // 2. Quantity at least 1
+    if (this.form.quantity < 1) {
+      this.modalError.set('Quantity must be at least 1.');
+      return;
+    }
 
-    const editing = this.editingItem();
+    // 3. No negative prices
+    if (this.form.purchasePrice < 0) {
+      this.modalError.set('Purchase price cannot be negative.');
+      return;
+    }
+    if (this.form.sellingPrice < 0) {
+      this.modalError.set('Selling price cannot be negative.');
+      return;
+    }
 
+    // 4. Selling price must be ≥ purchase price
+    if (this.form.sellingPrice < this.form.purchasePrice) {
+      this.modalError.set(
+        `Selling price (PKR ${this.form.sellingPrice}) must be ≥ purchase price (PKR ${this.form.purchasePrice}).`
+      );
+      return;
+    }
+
+    // 6. Unit must be valid for category
+    const allowed = CATEGORY_UNITS[this.form.category] ?? [];
+    if (!allowed.includes(this.form.unit)) {
+      this.modalError.set(`Unit "${this.form.unit}" is not valid for category "${this.form.category}".`);
+      return;
+    }
+
+    const editing  = this.editingItem();
     const request$ = editing
       ? this.api.update(editing.id, this.form)
       : this.api.create(this.form);
 
     request$.subscribe({
-      next: () => {
-        this.isLoading.set(false);
-        this.successMsg.set(
-          editing
-            ? 'Product updated successfully!'
-            : 'Product added successfully!'
-        );
-
-        this.closeModal();
-        setTimeout(() => this.successMsg.set(''), 2000);
-      },
-      error: () => {
-        this.isLoading.set(false);
-        this.errorMsg.set('Operation failed. Please try again.');
-      }
+      next:  () => this.closeModal(),
+      error: () => this.modalError.set('Operation failed. Please try again.')
     });
   }
 
-  deleteItem(id: number) {
-    this.errorMsg.set('');
-    this.successMsg.set('');
-    this.isLoading.set(true);
+  // ── Delete ───────────────────────────────────────────────────
 
-    this.api.delete(id).subscribe({
-      next: () => {
-        this.isLoading.set(false);
-        this.successMsg.set('Item deleted successfully!');
-        setTimeout(() => this.successMsg.set(''), 2000);
-      },
-      error: () => {
-        this.isLoading.set(false);
-        this.errorMsg.set('Delete failed. Server error.');
-      }
-    });
-  }
-
+  // ── Quick update ─────────────────────────────────────────────
   applyQuickUpdate() {
-    this.errorMsg.set('');
-    this.successMsg.set('');
+    this.quickError.set('');
+    this.quickSuccess.set('');
 
-    if (!this.quickUpdate.productId || this.quickUpdate.quantity < 1) {
-      this.errorMsg.set('Please select product and quantity.');
+    if (!this.quickUpdate.productId) {
+      this.quickError.set('Please select a product.');
+      return;
+    }
+    if (this.quickUpdate.quantity < 1) {
+      this.quickError.set('Quantity must be at least 1.');
       return;
     }
 
-    this.isLoading.set(true);
+    if (this.quickUpdate.action === 'subtract') {
+      const item = this.api.stockItems().find(i => i.id === +this.quickUpdate.productId);
+      if (item && this.quickUpdate.quantity > item.quantity) {
+        this.quickError.set(
+          `Cannot remove ${this.quickUpdate.quantity} — only ${item.quantity} ${item.unit} in stock.`
+        );
+        return;
+      }
+    }
 
     this.api.quickUpdate(+this.quickUpdate.productId, {
-      action: this.quickUpdate.action,
+      action:   this.quickUpdate.action,
       quantity: this.quickUpdate.quantity
     }).subscribe({
       next: () => {
-        this.isLoading.set(false);
-        this.successMsg.set('Stock updated successfully!');
+        this.quickSuccess.set('Stock updated successfully!');
         this.quickUpdate = { productId: '', action: 'add', quantity: 1 };
-
-        setTimeout(() => this.successMsg.set(''), 2000);
+        setTimeout(() => this.quickSuccess.set(''), 2500);
       },
-      error: () => {
-        this.isLoading.set(false);
-        this.errorMsg.set('Stock update failed.');
-      }
+      error: () => this.quickError.set('Stock update failed. Please try again.')
     });
   }
 
-  // ================= UI =================
+  // ── Helpers ──────────────────────────────────────────────────
   statusBadge(status: string): Record<string, boolean> {
     return {
       'badge-success': status === 'in-stock',
       'badge-warning': status === 'low-stock',
-      'badge-danger': status === 'out-of-stock'
+      'badge-danger':  status === 'out-of-stock'
     };
   }
 
   private blankForm(): StockItemRequest {
     return {
-      name: '',
-      category: 'Grocery',
-      quantity: 0,
-      unit: 'kg',
+      name:          '',
+      category:      'Grocery',
+      quantity:      1,
+      unit:          'kg',
       purchasePrice: 0,
-      sellingPrice: 0
+      sellingPrice:  0
     };
   }
 }

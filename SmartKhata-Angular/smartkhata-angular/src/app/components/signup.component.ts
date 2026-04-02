@@ -1,12 +1,13 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink],
+  imports: [FormsModule, CommonModule, RouterLink, HttpClientModule],
   template: `
     <div class="auth-layout">
 
@@ -78,11 +79,6 @@ import { CommonModule } from '@angular/common';
             </div>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Email Address (optional)</label>
-            <input class="form-input" [(ngModel)]="email" type="email" placeholder="raja@gmail.com" />
-          </div>
-
           <!-- Shop Details -->
           <div class="section-divider">Shop Details</div>
 
@@ -104,21 +100,6 @@ import { CommonModule } from '@angular/common';
             </div>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Business Type</label>
-            <select class="form-input" [(ngModel)]="biztype">
-              <option value="">Select type…</option>
-              <option>General Store / Kiryana</option>
-              <option>Hardware &amp; Tools</option>
-              <option>Textiles &amp; Fabric</option>
-              <option>Pharmacy / Medical</option>
-              <option>Electronics</option>
-              <option>Food &amp; Beverages</option>
-              <option>Wholesale / Trading</option>
-              <option>Other</option>
-            </select>
-          </div>
-
           <!-- Security -->
           <div class="section-divider">Security</div>
 
@@ -127,7 +108,7 @@ import { CommonModule } from '@angular/common';
             <div class="input-wrap">
               <input class="form-input" [(ngModel)]="password"
                 [type]="showPwd() ? 'text' : 'password'"
-                placeholder="Min. 8 characters" />
+                placeholder="Min. 6 characters" />
               <span class="input-icon" (click)="showPwd.set(!showPwd())">
                 @if (!showPwd()) {
                   <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -355,10 +336,8 @@ import { CommonModule } from '@angular/common';
 export class SignupComponent {
   fullname      = '';
   phone         = '';
-  email         = '';
   shopname      = '';
   city          = '';
-  biztype       = '';
   password      = '';
   confirmPwd    = '';
   termsAccepted = false;
@@ -367,7 +346,7 @@ export class SignupComponent {
   errorMsg        = signal('');
   successMsg      = signal('');
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private http: HttpClient) {}
 
   private get pwdScore(): number {
     const v = this.password;
@@ -397,20 +376,38 @@ export class SignupComponent {
     return 'pwd-hint ' + (classes[this.pwdScore - 1] || 'weak');
   }
 
-  doSignup() {
-    this.errorMsg.set('');
-    this.successMsg.set('');
-    const show = (msg: string) => this.errorMsg.set(msg);
+ doSignup() {
+  this.errorMsg.set('');
+  this.successMsg.set('');
+  const show = (msg: string) => this.errorMsg.set(msg);
 
-    if (!this.fullname)           return show('Please enter your full name.');
-    if (!this.phone)              return show('Please enter your phone number.');
-    if (!this.shopname)           return show('Please enter your shop name.');
-    if (!this.city)               return show('Please select your city.');
-    if (this.password.length < 6) return show('Password must be at least 6 characters.');
-    if (this.password !== this.confirmPwd) return show('Passwords do not match.');
-    if (!this.termsAccepted)      return show('Please accept the Terms of Service to continue.');
+  if (!this.fullname)           return show('Please enter your full name.');
+  if (!this.phone)              return show('Please enter your phone number.');
+  if (!this.shopname)           return show('Please enter your shop name.');
+  if (!this.city)               return show('Please select your city.');
+  if (this.password.length < 6) return show('Password must be at least 6 characters.');
+  if (this.password !== this.confirmPwd) return show('Passwords do not match.');
+  if (!this.termsAccepted)      return show('Please accept the Terms of Service to continue.');
 
-    this.successMsg.set('Account created! Redirecting to your dashboard…');
-    setTimeout(() => this.router.navigate(['/dashboard']), 1600);
-  }
+  const payload = {
+    ownerName:   this.fullname,
+    phoneNumber: this.phone,
+    shopName:    this.shopname,
+    city:        this.city,
+    currency:    'PKR',
+    password:    this.password
+  };
+
+  this.http.post<{ success: boolean; message: string }>('http://localhost:5000/api/auth/signup', payload)
+    .subscribe({
+      next: () => {
+        sessionStorage.setItem('sk_logged_in', '1');
+        this.successMsg.set('Account created! Redirecting…');
+        setTimeout(() => this.router.navigate(['/login']), 1600);
+      },
+      error: (err: HttpErrorResponse) => {
+        show(err.error?.message ?? 'Something went wrong. Please try again.');
+      }
+    });
+}
 }

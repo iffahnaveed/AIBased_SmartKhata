@@ -206,8 +206,10 @@ import { PkrPipe } from '../shared/pkr.pipe';
 
             <div class="form-group">
               <label class="form-label">Date *</label>
-              <input class="form-input" type="date" [(ngModel)]="form.date" />
-            </div>
+                <input class="form-input" type="date"
+                  [(ngModel)]="form.date"
+                  [min]="today"
+                  [max]="today" />            </div>
 
             <div class="form-group">
               <label class="form-label">Status</label>
@@ -250,7 +252,7 @@ export class SalesComponent implements OnInit {
   searchQuery  = '';
   paymentFilter = 'all';
   statusFilter  = 'all';
-
+  today = new Date().toISOString().split('T')[0];
   form: SaleEntryRequest = this.blankForm();
 
   // ── Filtered view ────────────────────────────────────────
@@ -325,18 +327,25 @@ export class SalesComponent implements OnInit {
   closeModal() { this.showModal.set(false); this.editingEntry.set(null); }
 
   saveEntry() {
-    if (!this.form.product) return;
-    if (this.form.paymentType === 'udhar' && !this.form.customer.trim()) return;
+  if (!this.form.product) return;
 
-    const editing = this.editingEntry();
-    const call = editing
-      ? this.api.update(editing.id, this.form)
-      : this.api.create(this.form);
+  if (this.form.paymentType === 'udhar' && !this.form.customer.trim()) return;
 
-    call.subscribe({
-      next: () => { this.applyFilters(); this.closeModal(); }
-    });
+  // ✅ Date validation
+  if (this.form.date !== this.today) {
+    alert('Only today\'s date is allowed.');
+    return;
   }
+
+  const editing = this.editingEntry();
+  const call = editing
+    ? this.api.update(editing.id, this.form)
+    : this.api.create(this.form);
+
+  call.subscribe({
+    next: () => { this.applyFilters(); this.closeModal(); }
+  });
+}
 
   deleteEntry(id: number) {
     this.api.delete(id).subscribe({

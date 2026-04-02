@@ -3,15 +3,28 @@ import { Routes } from '@angular/router';
 import { authGuard } from './services/auth.guards';
 
 export const routes: Routes = [
-
-  // ── Auth pages ─────────────────────────────────────────────
+  // Auth pages (no guard)
   {
     path: 'login',
     loadComponent: () =>
       import('./components/login.component').then(m => m.LoginComponent)
   },
+  {
+    path: 'signup',
+    loadComponent: () =>
+      import('./components/signup.component').then(m => m.SignupComponent)
+  },
 
-  // ── App pages ──────────────────────────────────────────────
+  // ❌ REMOVE the broken /dashboard route that loaded AppComponent
+  // AppComponent IS the shell — it renders via index.html, not a route
+
+  // App pages (all guarded)
+  {
+    path: 'dashboard',           // ✅ dashboard now loads StockComponent
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./components/stock.component').then(m => m.StockComponent)
+  },
   {
     path: 'stock',
     canActivate: [authGuard],
@@ -37,8 +50,7 @@ export const routes: Routes = [
       import('./components/settings.component').then(m => m.SettingsComponent)
   },
 
-  // ── Default redirect ───────────────────────────────────────
-  { path: '', redirectTo: 'stock', pathMatch: 'full' },
-  { path: '**', redirectTo: 'stock' }
-
+  // Default redirect
+  { path: '', redirectTo: 'login', pathMatch: 'full' },  // ✅ start at login
+  { path: '**', redirectTo: 'login' }
 ];

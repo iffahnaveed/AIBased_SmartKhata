@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "302A/G7WGS/Dyz+1UesBGel6ENpwFe+8a9C4fP42Ny++gW2nOzQKgIC7uE/ejLs+hElUAZ+XrRwfV4alZ34O3w==",
+  "dgSpecHash": "uinY9tORF2M8Ubraale90hLs7Tjfz1EBC0tr3Pgduhicm2yq4VVb2Vxj7ytQen2AgiT012YEYcsQotUj7L2uQw==",
   "success": true,
   "projectFilePath": "D:\\AIBased_SmartKhata\\SmartKhata-Angular\\smartkhata-backend\\SmartKhata.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
