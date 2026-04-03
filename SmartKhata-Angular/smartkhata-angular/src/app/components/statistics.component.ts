@@ -35,17 +35,7 @@ type PeriodKey = 'today' | 'week' | 'month';
       </div>
     </div>
 
-    <!-- Period Tabs -->
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
-      <div class="tab-bar">
-        @for (p of periods; track p.key) {
-          <button class="tab-btn" [class.active]="activePeriod() === p.key"
-            (click)="setPeriod(p.key)">
-            {{ p.label }}
-          </button>
-        }
-      </div>
-    </div>
+  
 
     <!-- Main Grid -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
@@ -53,7 +43,7 @@ type PeriodKey = 'today' | 'week' | 'month';
       <!-- Fast Moving Products -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title">🔥 Fast Moving Products</div>
+          <div class="card-title"> Fast Moving Products</div>
           <span style="font-size:11px;color:var(--beige-700)">By units sold</span>
         </div>
         <div class="card-body" style="padding-top:8px;">
@@ -86,7 +76,7 @@ type PeriodKey = 'today' | 'week' | 'month';
       <!-- Slow Moving Products -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title">🐢 Slow Moving Products</div>
+          <div class="card-title"> Slow Moving Products</div>
           <span style="font-size:11px;color:var(--beige-700)">Needs attention</span>
         </div>
         <div class="card-body" style="padding-top:8px;">
@@ -109,7 +99,7 @@ type PeriodKey = 'today' | 'week' | 'month';
           }
           @empty {
             <div style="text-align:center;padding:24px;color:var(--beige-700);font-size:13px;">
-              All products are moving well 🎉
+              All products are moving well 
             </div>
           }
         </div>
@@ -187,7 +177,7 @@ type PeriodKey = 'today' | 'week' | 'month';
       <!-- Low Stock Alerts -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title" style="color:var(--amber-600,#b45309);">⚠️ Low Stock Alerts</div>
+          <div class="card-title" style="color:var(--amber-600,#b45309);"> Low Stock Alerts</div>
           <span class="badge badge-warning">{{ lowStockAlerts().length }} items</span>
         </div>
         <div class="card-body" style="padding-top:8px;">
@@ -251,8 +241,8 @@ type PeriodKey = 'today' | 'week' | 'month';
     <!-- AI Stock Predictions Card -->
     <div class="card" style="margin-bottom:20px;">
       <div class="card-header">
-        <div class="card-title">🤖 AI Stock Predictions</div>
-        <span style="font-size:11px;color:var(--beige-700)">Based on sales velocity</span>
+        <div class="card-title"> AI Stock Predictions</div>
+       
       </div>
 
       <!-- Summary chips -->
@@ -294,7 +284,7 @@ type PeriodKey = 'today' | 'week' | 'month';
             @if (predictions().length === 0) {
               <tr>
                 <td colspan="7" style="text-align:center;padding:40px;color:var(--beige-700);">
-                  <div style="font-size:32px;margin-bottom:8px;">🤖</div>
+                  <div style="font-size:32px;margin-bottom:8px;"></div>
                   <div style="font-size:13px;font-weight:600;">No predictions yet</div>
                   <div style="font-size:11px;margin-top:4px;">Add sales data to generate predictions</div>
                 </td>
@@ -353,12 +343,7 @@ export class StatisticsComponent {
   private _activePeriod = signal<PeriodKey>('week');
   activePeriod = this._activePeriod.asReadonly();
 
-  periods: { key: PeriodKey; label: string }[] = [
-    { key: 'today', label: 'Today' },
-    { key: 'week',  label: 'This Week' },
-    { key: 'month', label: 'This Month' }
-  ];
-
+  
   setPeriod(key: PeriodKey) {
     this._activePeriod.set(key);
   }

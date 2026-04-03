@@ -383,15 +383,23 @@ export class SignupComponent {
 
   if (!this.fullname)           return show('Please enter your full name.');
   if (!this.phone)              return show('Please enter your phone number.');
+
+  // 03XX-XXXXXXX or 03XXXXXXXXX — exactly 11 digits starting with 03
+  const phoneRegex = /^03\d{2}-?\d{7}$/;
+  if (!phoneRegex.test(this.phone)) return show('Enter a valid phone number e.g. 0300-1234567');
+
   if (!this.shopname)           return show('Please enter your shop name.');
   if (!this.city)               return show('Please select your city.');
   if (this.password.length < 6) return show('Password must be at least 6 characters.');
   if (this.password !== this.confirmPwd) return show('Passwords do not match.');
   if (!this.termsAccepted)      return show('Please accept the Terms of Service to continue.');
 
+  // strip dash before sending to API
+  const cleanPhone = this.phone.replace('-', '');
+
   const payload = {
     ownerName:   this.fullname,
-    phoneNumber: this.phone,
+    phoneNumber: cleanPhone,
     shopName:    this.shopname,
     city:        this.city,
     currency:    'PKR',
@@ -401,7 +409,6 @@ export class SignupComponent {
   this.http.post<{ success: boolean; message: string }>('http://localhost:5000/api/auth/signup', payload)
     .subscribe({
       next: () => {
-        sessionStorage.setItem('sk_logged_in', '1');
         this.successMsg.set('Account created! Redirecting…');
         setTimeout(() => this.router.navigate(['/login']), 1600);
       },
@@ -409,5 +416,4 @@ export class SignupComponent {
         show(err.error?.message ?? 'Something went wrong. Please try again.');
       }
     });
-}
-}
+  }}

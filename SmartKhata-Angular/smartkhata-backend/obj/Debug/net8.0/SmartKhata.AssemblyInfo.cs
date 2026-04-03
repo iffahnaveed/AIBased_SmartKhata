@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartKhata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fe87b2cd3beec7da3a52d7f22438bf872339359")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8341db3acaa3474b525703cfd4cb88f865215d4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartKhata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartKhata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -129,7 +129,7 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
         @if (lowStockItems().length > 0) {
           <div class="card">
             <div class="card-header">
-              <div class="card-title" style="color:var(--amber-600);">⚠️ Low Stock Alerts</div>
+              <div class="card-title" style="color:var(--amber-600);">Low Stock Alerts</div>
             </div>
             <div class="card-body" style="padding-top:8px;padding-bottom:8px;">
               @for (item of lowStockItems(); track item.id) {
@@ -219,7 +219,7 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
 
           @if (modalError()) {
             <div style="background:var(--red-bg);color:var(--red-text);border-radius:6px;padding:10px 14px;font-size:12.5px;margin-bottom:14px;display:flex;gap:8px;align-items:center;">
-              ⚠️ {{ modalError() }}
+               {{ modalError() }}
             </div>
           }
 
@@ -289,7 +289,7 @@ const CATEGORIES = Object.keys(CATEGORY_UNITS);
                 (input)="clampSelling()" />
               @if (form.sellingPrice > 0 && form.sellingPrice < form.purchasePrice) {
                 <span style="font-size:11px;color:var(--red-text);">
-                  ⚠️ Selling price must be ≥ purchase price ({{ form.purchasePrice | pkr }})
+                   Selling price must be ≥ purchase price ({{ form.purchasePrice | pkr }})
                 </span>
               }
             </div>
