@@ -1,0 +1,1120 @@
+sale_id,date,day_of_week,week_of_year,month,product,category,quantity,unit,purchase_price,selling_price,total_revenue,profit,payment_type,customer,status
+1,2024-05-01,Wednesday,18,5,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+2,2024-05-01,Wednesday,18,5,Milk,Dairy,4,litre,180,200,800,80,udhar,Fatima Bibi,pending
+3,2024-05-01,Wednesday,18,5,Bread,Bakery,11,pcs,50,60,660,110,cash,Walk-in,paid
+4,2024-05-01,Wednesday,18,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+5,2024-05-01,Wednesday,18,5,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+6,2024-05-01,Wednesday,18,5,Salt,Grocery,4,kg,20,30,120,40,cash,Walk-in,paid
+7,2024-05-01,Wednesday,18,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+8,2024-05-01,Wednesday,18,5,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+9,2024-05-01,Wednesday,18,5,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+10,2024-05-01,Wednesday,18,5,Chips (Lays),Beverages,2,pack,30,40,80,20,udhar,Fatima Bibi,pending
+11,2024-05-02,Thursday,18,5,Sugar,Grocery,9,kg,90,100,900,90,udhar,Usman Store,pending
+12,2024-05-02,Thursday,18,5,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+13,2024-05-02,Thursday,18,5,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+14,2024-05-02,Thursday,18,5,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+15,2024-05-02,Thursday,18,5,Bread,Bakery,7,pcs,50,60,420,70,udhar,Bilal Hardware,pending
+16,2024-05-02,Thursday,18,5,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Bilal Hardware,overdue
+17,2024-05-02,Thursday,18,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+18,2024-05-02,Thursday,18,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Sara Khan,pending
+19,2024-05-02,Thursday,18,5,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+20,2024-05-02,Thursday,18,5,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+21,2024-05-02,Thursday,18,5,Eggs,Dairy,7,pcs,20,25,175,35,cash,Walk-in,paid
+22,2024-05-02,Thursday,18,5,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+23,2024-05-02,Thursday,18,5,Butter,Dairy,1,pcs,120,140,140,20,udhar,Bilal Hardware,overdue
+24,2024-05-02,Thursday,18,5,Butter,Dairy,2,pcs,120,140,280,40,udhar,Usman Store,overdue
+25,2024-05-02,Thursday,18,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+26,2024-05-02,Thursday,18,5,Chips (Lays),Beverages,2,pack,30,40,80,20,udhar,Tariq Bhai,paid
+27,2024-05-03,Friday,18,5,Milk,Dairy,8,litre,180,200,1600,160,cash,Walk-in,paid
+28,2024-05-03,Friday,18,5,Bread,Bakery,16,pcs,50,60,960,160,udhar,Sara Khan,paid
+29,2024-05-03,Friday,18,5,Bread,Bakery,14,pcs,50,60,840,140,cash,Walk-in,paid
+30,2024-05-03,Friday,18,5,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+31,2024-05-03,Friday,18,5,Rice (Basmati),Grocery,13,kg,280,320,4160,520,cash,Walk-in,paid
+32,2024-05-03,Friday,18,5,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+33,2024-05-03,Friday,18,5,Cooking Oil,Grocery,5,litre,480,530,2650,250,cash,Walk-in,paid
+34,2024-05-03,Friday,18,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+35,2024-05-03,Friday,18,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Sara Khan,pending
+36,2024-05-03,Friday,18,5,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,udhar,Fatima Bibi,paid
+37,2024-05-03,Friday,18,5,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+38,2024-05-03,Friday,18,5,Butter,Dairy,5,pcs,120,140,700,100,udhar,Bilal Hardware,paid
+39,2024-05-03,Friday,18,5,Salt,Grocery,2,kg,20,30,60,20,udhar,Usman Store,pending
+40,2024-05-04,Saturday,18,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+41,2024-05-04,Saturday,18,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+42,2024-05-04,Saturday,18,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Bilal Hardware,overdue
+43,2024-05-04,Saturday,18,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+44,2024-05-04,Saturday,18,5,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+45,2024-05-04,Saturday,18,5,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+46,2024-05-04,Saturday,18,5,Eggs,Dairy,21,pcs,20,25,525,105,udhar,Ahmed Raza,pending
+47,2024-05-04,Saturday,18,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+48,2024-05-04,Saturday,18,5,Chips (Lays),Beverages,7,pack,30,40,280,70,cash,Walk-in,paid
+49,2024-05-04,Saturday,18,5,Chips (Lays),Beverages,8,pack,30,40,320,80,cash,Walk-in,paid
+50,2024-05-04,Saturday,18,5,Matches,Household,1,box,5,10,10,5,udhar,Bilal Hardware,pending
+51,2024-05-05,Sunday,18,5,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+52,2024-05-05,Sunday,18,5,Milk,Dairy,5,litre,180,200,1000,100,udhar,Sara Khan,paid
+53,2024-05-05,Sunday,18,5,Bread,Bakery,7,pcs,50,60,420,70,udhar,Fatima Bibi,overdue
+54,2024-05-05,Sunday,18,5,Bread,Bakery,13,pcs,50,60,780,130,cash,Walk-in,paid
+55,2024-05-05,Sunday,18,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+56,2024-05-05,Sunday,18,5,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Fatima Bibi,pending
+57,2024-05-05,Sunday,18,5,Flour (Atta),Grocery,8,kg,70,80,640,80,udhar,Bilal Hardware,overdue
+58,2024-05-05,Sunday,18,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+59,2024-05-05,Sunday,18,5,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+60,2024-05-06,Monday,19,5,Sugar,Grocery,8,kg,90,100,800,80,cash,Walk-in,paid
+61,2024-05-06,Monday,19,5,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+62,2024-05-06,Monday,19,5,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+63,2024-05-06,Monday,19,5,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+64,2024-05-06,Monday,19,5,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+65,2024-05-06,Monday,19,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Fatima Bibi,pending
+66,2024-05-06,Monday,19,5,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+67,2024-05-06,Monday,19,5,Butter,Dairy,1,pcs,120,140,140,20,udhar,Bilal Hardware,overdue
+68,2024-05-06,Monday,19,5,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+69,2024-05-06,Monday,19,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+70,2024-05-06,Monday,19,5,Chips (Lays),Beverages,8,pack,30,40,320,80,udhar,Ahmed Raza,pending
+71,2024-05-07,Tuesday,19,5,Milk,Dairy,1,litre,180,200,200,20,cash,Walk-in,paid
+72,2024-05-07,Tuesday,19,5,Rice (Basmati),Grocery,8,kg,280,320,2560,320,udhar,Fatima Bibi,pending
+73,2024-05-07,Tuesday,19,5,Rice (Basmati),Grocery,6,kg,280,320,1920,240,cash,Walk-in,paid
+74,2024-05-07,Tuesday,19,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Ahmed Raza,paid
+75,2024-05-07,Tuesday,19,5,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+76,2024-05-07,Tuesday,19,5,Flour (Atta),Grocery,10,kg,70,80,800,100,udhar,Bilal Hardware,paid
+77,2024-05-07,Tuesday,19,5,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+78,2024-05-07,Tuesday,19,5,Eggs,Dairy,13,pcs,20,25,325,65,udhar,Tariq Bhai,paid
+79,2024-05-07,Tuesday,19,5,Eggs,Dairy,11,pcs,20,25,275,55,cash,Walk-in,paid
+80,2024-05-07,Tuesday,19,5,Butter,Dairy,3,pcs,120,140,420,60,udhar,Bilal Hardware,pending
+81,2024-05-07,Tuesday,19,5,Butter,Dairy,2,pcs,120,140,280,40,udhar,Bilal Hardware,pending
+82,2024-05-07,Tuesday,19,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+83,2024-05-07,Tuesday,19,5,Matches,Household,1,box,5,10,10,5,udhar,Fatima Bibi,pending
+84,2024-05-08,Wednesday,19,5,Milk,Dairy,5,litre,180,200,1000,100,cash,Walk-in,paid
+85,2024-05-08,Wednesday,19,5,Milk,Dairy,1,litre,180,200,200,20,cash,Walk-in,paid
+86,2024-05-08,Wednesday,19,5,Bread,Bakery,4,pcs,50,60,240,40,cash,Walk-in,paid
+87,2024-05-08,Wednesday,19,5,Rice (Basmati),Grocery,1,kg,280,320,320,40,cash,Walk-in,paid
+88,2024-05-08,Wednesday,19,5,Rice (Basmati),Grocery,14,kg,280,320,4480,560,udhar,Bilal Hardware,pending
+89,2024-05-08,Wednesday,19,5,Cooking Oil,Grocery,4,litre,480,530,2120,200,cash,Walk-in,paid
+90,2024-05-08,Wednesday,19,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Sara Khan,pending
+91,2024-05-08,Wednesday,19,5,Biscuits,Bakery,5,pack,40,50,250,50,udhar,Ahmed Raza,paid
+92,2024-05-08,Wednesday,19,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+93,2024-05-08,Wednesday,19,5,Eggs,Dairy,17,pcs,20,25,425,85,udhar,Fatima Bibi,overdue
+94,2024-05-08,Wednesday,19,5,Butter,Dairy,1,pcs,120,140,140,20,udhar,Sara Khan,pending
+95,2024-05-08,Wednesday,19,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+96,2024-05-08,Wednesday,19,5,Chips (Lays),Beverages,2,pack,30,40,80,20,cash,Walk-in,paid
+97,2024-05-08,Wednesday,19,5,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+98,2024-05-09,Thursday,19,5,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+99,2024-05-09,Thursday,19,5,Milk,Dairy,5,litre,180,200,1000,100,udhar,Bilal Hardware,paid
+100,2024-05-09,Thursday,19,5,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+101,2024-05-09,Thursday,19,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,pending
+102,2024-05-09,Thursday,19,5,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Usman Store,pending
+103,2024-05-09,Thursday,19,5,Biscuits,Bakery,5,pack,40,50,250,50,udhar,Bilal Hardware,pending
+104,2024-05-09,Thursday,19,5,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Fatima Bibi,pending
+105,2024-05-09,Thursday,19,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+106,2024-05-09,Thursday,19,5,Flour (Atta),Grocery,9,kg,70,80,720,90,udhar,Usman Store,overdue
+107,2024-05-09,Thursday,19,5,Eggs,Dairy,4,pcs,20,25,100,20,cash,Walk-in,paid
+108,2024-05-09,Thursday,19,5,Butter,Dairy,1,pcs,120,140,140,20,udhar,Usman Store,pending
+109,2024-05-09,Thursday,19,5,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+110,2024-05-09,Thursday,19,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+111,2024-05-09,Thursday,19,5,Salt,Grocery,2,kg,20,30,60,20,udhar,Bilal Hardware,pending
+112,2024-05-09,Thursday,19,5,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+113,2024-05-10,Friday,19,5,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+114,2024-05-10,Friday,19,5,Milk,Dairy,5,litre,180,200,1000,100,cash,Walk-in,paid
+115,2024-05-10,Friday,19,5,Rice (Basmati),Grocery,20,kg,280,320,6400,800,udhar,Fatima Bibi,pending
+116,2024-05-10,Friday,19,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Usman Store,overdue
+117,2024-05-10,Friday,19,5,Biscuits,Bakery,6,pack,40,50,300,60,cash,Walk-in,paid
+118,2024-05-10,Friday,19,5,Flour (Atta),Grocery,6,kg,70,80,480,60,udhar,Usman Store,paid
+119,2024-05-10,Friday,19,5,Flour (Atta),Grocery,16,kg,70,80,1280,160,udhar,Fatima Bibi,overdue
+120,2024-05-10,Friday,19,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+121,2024-05-10,Friday,19,5,Salt,Grocery,4,kg,20,30,120,40,cash,Walk-in,paid
+122,2024-05-10,Friday,19,5,Chips (Lays),Beverages,7,pack,30,40,280,70,udhar,Usman Store,pending
+123,2024-05-11,Saturday,19,5,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+124,2024-05-11,Saturday,19,5,Sugar,Grocery,10,kg,90,100,1000,100,udhar,Bilal Hardware,overdue
+125,2024-05-11,Saturday,19,5,Milk,Dairy,4,litre,180,200,800,80,udhar,Bilal Hardware,paid
+126,2024-05-11,Saturday,19,5,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+127,2024-05-11,Saturday,19,5,Rice (Basmati),Grocery,23,kg,280,320,7360,920,cash,Walk-in,paid
+128,2024-05-11,Saturday,19,5,Biscuits,Bakery,7,pack,40,50,350,70,udhar,Bilal Hardware,paid
+129,2024-05-11,Saturday,19,5,Biscuits,Bakery,5,pack,40,50,250,50,cash,Walk-in,paid
+130,2024-05-11,Saturday,19,5,Biscuits,Bakery,5,pack,40,50,250,50,udhar,Usman Store,pending
+131,2024-05-11,Saturday,19,5,Eggs,Dairy,22,pcs,20,25,550,110,cash,Walk-in,paid
+132,2024-05-11,Saturday,19,5,Eggs,Dairy,14,pcs,20,25,350,70,udhar,Ahmed Raza,pending
+133,2024-05-11,Saturday,19,5,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+134,2024-05-11,Saturday,19,5,Salt,Grocery,4,kg,20,30,120,40,udhar,Ahmed Raza,pending
+135,2024-05-11,Saturday,19,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+136,2024-05-12,Sunday,19,5,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+137,2024-05-12,Sunday,19,5,Milk,Dairy,4,litre,180,200,800,80,udhar,Fatima Bibi,pending
+138,2024-05-12,Sunday,19,5,Milk,Dairy,1,litre,180,200,200,20,udhar,Ahmed Raza,pending
+139,2024-05-12,Sunday,19,5,Bread,Bakery,9,pcs,50,60,540,90,udhar,Sara Khan,pending
+140,2024-05-12,Sunday,19,5,Rice (Basmati),Grocery,4,kg,280,320,1280,160,cash,Walk-in,paid
+141,2024-05-12,Sunday,19,5,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+142,2024-05-12,Sunday,19,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Sara Khan,overdue
+143,2024-05-12,Sunday,19,5,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+144,2024-05-12,Sunday,19,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+145,2024-05-12,Sunday,19,5,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+146,2024-05-12,Sunday,19,5,Eggs,Dairy,17,pcs,20,25,425,85,cash,Walk-in,paid
+147,2024-05-12,Sunday,19,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+148,2024-05-12,Sunday,19,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+149,2024-05-12,Sunday,19,5,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+150,2024-05-12,Sunday,19,5,Salt,Grocery,3,kg,20,30,90,30,udhar,Tariq Bhai,pending
+151,2024-05-12,Sunday,19,5,Matches,Household,2,box,5,10,20,10,cash,Walk-in,paid
+152,2024-05-13,Monday,20,5,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+153,2024-05-13,Monday,20,5,Biscuits,Bakery,2,pack,40,50,100,20,udhar,Usman Store,pending
+154,2024-05-13,Monday,20,5,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+155,2024-05-13,Monday,20,5,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+156,2024-05-13,Monday,20,5,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+157,2024-05-13,Monday,20,5,Butter,Dairy,3,pcs,120,140,420,60,udhar,Ahmed Raza,paid
+158,2024-05-13,Monday,20,5,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+159,2024-05-13,Monday,20,5,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+160,2024-05-14,Tuesday,20,5,Sugar,Grocery,4,kg,90,100,400,40,udhar,Sara Khan,overdue
+161,2024-05-14,Tuesday,20,5,Sugar,Grocery,10,kg,90,100,1000,100,cash,Walk-in,paid
+162,2024-05-14,Tuesday,20,5,Milk,Dairy,5,litre,180,200,1000,100,cash,Walk-in,paid
+163,2024-05-14,Tuesday,20,5,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+164,2024-05-14,Tuesday,20,5,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+165,2024-05-14,Tuesday,20,5,Rice (Basmati),Grocery,8,kg,280,320,2560,320,cash,Walk-in,paid
+166,2024-05-14,Tuesday,20,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+167,2024-05-14,Tuesday,20,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+168,2024-05-14,Tuesday,20,5,Chips (Lays),Beverages,2,pack,30,40,80,20,cash,Walk-in,paid
+169,2024-05-14,Tuesday,20,5,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+170,2024-05-15,Wednesday,20,5,Sugar,Grocery,1,kg,90,100,100,10,cash,Walk-in,paid
+171,2024-05-15,Wednesday,20,5,Milk,Dairy,1,litre,180,200,200,20,udhar,Tariq Bhai,pending
+172,2024-05-15,Wednesday,20,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,overdue
+173,2024-05-15,Wednesday,20,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Fatima Bibi,pending
+174,2024-05-15,Wednesday,20,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Usman Store,overdue
+175,2024-05-15,Wednesday,20,5,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Usman Store,pending
+176,2024-05-15,Wednesday,20,5,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+177,2024-05-15,Wednesday,20,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+178,2024-05-15,Wednesday,20,5,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+179,2024-05-15,Wednesday,20,5,Flour (Atta),Grocery,6,kg,70,80,480,60,udhar,Usman Store,paid
+180,2024-05-15,Wednesday,20,5,Eggs,Dairy,15,pcs,20,25,375,75,cash,Walk-in,paid
+181,2024-05-15,Wednesday,20,5,Eggs,Dairy,15,pcs,20,25,375,75,cash,Walk-in,paid
+182,2024-05-15,Wednesday,20,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+183,2024-05-15,Wednesday,20,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+184,2024-05-15,Wednesday,20,5,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+185,2024-05-16,Thursday,20,5,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+186,2024-05-16,Thursday,20,5,Rice (Basmati),Grocery,4,kg,280,320,1280,160,cash,Walk-in,paid
+187,2024-05-16,Thursday,20,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+188,2024-05-16,Thursday,20,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+189,2024-05-16,Thursday,20,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+190,2024-05-16,Thursday,20,5,Flour (Atta),Grocery,9,kg,70,80,720,90,cash,Walk-in,paid
+191,2024-05-16,Thursday,20,5,Butter,Dairy,2,pcs,120,140,280,40,udhar,Sara Khan,paid
+192,2024-05-16,Thursday,20,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+193,2024-05-16,Thursday,20,5,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+194,2024-05-17,Friday,20,5,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+195,2024-05-17,Friday,20,5,Milk,Dairy,5,litre,180,200,1000,100,udhar,Fatima Bibi,pending
+196,2024-05-17,Friday,20,5,Bread,Bakery,16,pcs,50,60,960,160,cash,Walk-in,paid
+197,2024-05-17,Friday,20,5,Bread,Bakery,12,pcs,50,60,720,120,udhar,Usman Store,pending
+198,2024-05-17,Friday,20,5,Rice (Basmati),Grocery,20,kg,280,320,6400,800,udhar,Bilal Hardware,pending
+199,2024-05-17,Friday,20,5,Biscuits,Bakery,6,pack,40,50,300,60,cash,Walk-in,paid
+200,2024-05-17,Friday,20,5,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+201,2024-05-17,Friday,20,5,Flour (Atta),Grocery,15,kg,70,80,1200,150,udhar,Tariq Bhai,pending
+202,2024-05-17,Friday,20,5,Eggs,Dairy,18,pcs,20,25,450,90,udhar,Fatima Bibi,pending
+203,2024-05-17,Friday,20,5,Butter,Dairy,2,pcs,120,140,280,40,udhar,Ahmed Raza,overdue
+204,2024-05-17,Friday,20,5,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+205,2024-05-18,Saturday,20,5,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+206,2024-05-18,Saturday,20,5,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+207,2024-05-18,Saturday,20,5,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+208,2024-05-18,Saturday,20,5,Bread,Bakery,15,pcs,50,60,900,150,cash,Walk-in,paid
+209,2024-05-18,Saturday,20,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+210,2024-05-18,Saturday,20,5,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+211,2024-05-18,Saturday,20,5,Flour (Atta),Grocery,15,kg,70,80,1200,150,cash,Walk-in,paid
+212,2024-05-18,Saturday,20,5,Eggs,Dairy,16,pcs,20,25,400,80,cash,Walk-in,paid
+213,2024-05-18,Saturday,20,5,Butter,Dairy,4,pcs,120,140,560,80,udhar,Tariq Bhai,pending
+214,2024-05-18,Saturday,20,5,Butter,Dairy,3,pcs,120,140,420,60,udhar,Bilal Hardware,paid
+215,2024-05-18,Saturday,20,5,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+216,2024-05-18,Saturday,20,5,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+217,2024-05-18,Saturday,20,5,Chips (Lays),Beverages,10,pack,30,40,400,100,cash,Walk-in,paid
+218,2024-05-18,Saturday,20,5,Matches,Household,1,box,5,10,10,5,udhar,Ahmed Raza,paid
+219,2024-05-19,Sunday,20,5,Sugar,Grocery,8,kg,90,100,800,80,udhar,Bilal Hardware,overdue
+220,2024-05-19,Sunday,20,5,Milk,Dairy,1,litre,180,200,200,20,cash,Walk-in,paid
+221,2024-05-19,Sunday,20,5,Bread,Bakery,6,pcs,50,60,360,60,udhar,Bilal Hardware,overdue
+222,2024-05-19,Sunday,20,5,Rice (Basmati),Grocery,4,kg,280,320,1280,160,cash,Walk-in,paid
+223,2024-05-19,Sunday,20,5,Rice (Basmati),Grocery,8,kg,280,320,2560,320,cash,Walk-in,paid
+224,2024-05-19,Sunday,20,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+225,2024-05-19,Sunday,20,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+226,2024-05-19,Sunday,20,5,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+227,2024-05-19,Sunday,20,5,Biscuits,Bakery,6,pack,40,50,300,60,cash,Walk-in,paid
+228,2024-05-19,Sunday,20,5,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Usman Store,paid
+229,2024-05-19,Sunday,20,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+230,2024-05-19,Sunday,20,5,Flour (Atta),Grocery,4,kg,70,80,320,40,udhar,Usman Store,paid
+231,2024-05-19,Sunday,20,5,Eggs,Dairy,7,pcs,20,25,175,35,cash,Walk-in,paid
+232,2024-05-19,Sunday,20,5,Eggs,Dairy,17,pcs,20,25,425,85,cash,Walk-in,paid
+233,2024-05-19,Sunday,20,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+234,2024-05-19,Sunday,20,5,Salt,Grocery,1,kg,20,30,30,10,udhar,Ahmed Raza,overdue
+235,2024-05-19,Sunday,20,5,Salt,Grocery,1,kg,20,30,30,10,udhar,Sara Khan,paid
+236,2024-05-19,Sunday,20,5,Matches,Household,1,box,5,10,10,5,udhar,Sara Khan,overdue
+237,2024-05-20,Monday,21,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+238,2024-05-20,Monday,21,5,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+239,2024-05-20,Monday,21,5,Rice (Basmati),Grocery,3,kg,280,320,960,120,udhar,Fatima Bibi,pending
+240,2024-05-20,Monday,21,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+241,2024-05-20,Monday,21,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+242,2024-05-20,Monday,21,5,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+243,2024-05-20,Monday,21,5,Flour (Atta),Grocery,1,kg,70,80,80,10,cash,Walk-in,paid
+244,2024-05-20,Monday,21,5,Eggs,Dairy,8,pcs,20,25,200,40,cash,Walk-in,paid
+245,2024-05-20,Monday,21,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+246,2024-05-20,Monday,21,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+247,2024-05-21,Tuesday,21,5,Milk,Dairy,7,litre,180,200,1400,140,cash,Walk-in,paid
+248,2024-05-21,Tuesday,21,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+249,2024-05-21,Tuesday,21,5,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+250,2024-05-21,Tuesday,21,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+251,2024-05-21,Tuesday,21,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+252,2024-05-21,Tuesday,21,5,Eggs,Dairy,14,pcs,20,25,350,70,cash,Walk-in,paid
+253,2024-05-21,Tuesday,21,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+254,2024-05-21,Tuesday,21,5,Chips (Lays),Beverages,4,pack,30,40,160,40,udhar,Ahmed Raza,paid
+255,2024-05-22,Wednesday,21,5,Sugar,Grocery,5,kg,90,100,500,50,udhar,Usman Store,pending
+256,2024-05-22,Wednesday,21,5,Bread,Bakery,8,pcs,50,60,480,80,cash,Walk-in,paid
+257,2024-05-22,Wednesday,21,5,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+258,2024-05-22,Wednesday,21,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+259,2024-05-22,Wednesday,21,5,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+260,2024-05-22,Wednesday,21,5,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Ahmed Raza,paid
+261,2024-05-22,Wednesday,21,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+262,2024-05-22,Wednesday,21,5,Flour (Atta),Grocery,5,kg,70,80,400,50,cash,Walk-in,paid
+263,2024-05-22,Wednesday,21,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+264,2024-05-22,Wednesday,21,5,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+265,2024-05-22,Wednesday,21,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+266,2024-05-22,Wednesday,21,5,Chips (Lays),Beverages,3,pack,30,40,120,30,udhar,Fatima Bibi,pending
+267,2024-05-23,Thursday,21,5,Sugar,Grocery,2,kg,90,100,200,20,udhar,Usman Store,paid
+268,2024-05-23,Thursday,21,5,Milk,Dairy,6,litre,180,200,1200,120,udhar,Fatima Bibi,pending
+269,2024-05-23,Thursday,21,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,udhar,Sara Khan,paid
+270,2024-05-23,Thursday,21,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,pending
+271,2024-05-23,Thursday,21,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+272,2024-05-23,Thursday,21,5,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+273,2024-05-23,Thursday,21,5,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+274,2024-05-23,Thursday,21,5,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+275,2024-05-23,Thursday,21,5,Eggs,Dairy,17,pcs,20,25,425,85,udhar,Ahmed Raza,paid
+276,2024-05-23,Thursday,21,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+277,2024-05-23,Thursday,21,5,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+278,2024-05-24,Friday,21,5,Milk,Dairy,2,litre,180,200,400,40,udhar,Sara Khan,pending
+279,2024-05-24,Friday,21,5,Bread,Bakery,11,pcs,50,60,660,110,cash,Walk-in,paid
+280,2024-05-24,Friday,21,5,Rice (Basmati),Grocery,13,kg,280,320,4160,520,cash,Walk-in,paid
+281,2024-05-24,Friday,21,5,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Ahmed Raza,pending
+282,2024-05-24,Friday,21,5,Flour (Atta),Grocery,14,kg,70,80,1120,140,cash,Walk-in,paid
+283,2024-05-24,Friday,21,5,Eggs,Dairy,20,pcs,20,25,500,100,udhar,Fatima Bibi,overdue
+284,2024-05-24,Friday,21,5,Butter,Dairy,4,pcs,120,140,560,80,cash,Walk-in,paid
+285,2024-05-24,Friday,21,5,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+286,2024-05-25,Saturday,21,5,Sugar,Grocery,10,kg,90,100,1000,100,cash,Walk-in,paid
+287,2024-05-25,Saturday,21,5,Bread,Bakery,20,pcs,50,60,1200,200,udhar,Usman Store,paid
+288,2024-05-25,Saturday,21,5,Rice (Basmati),Grocery,20,kg,280,320,6400,800,cash,Walk-in,paid
+289,2024-05-25,Saturday,21,5,Rice (Basmati),Grocery,22,kg,280,320,7040,880,cash,Walk-in,paid
+290,2024-05-25,Saturday,21,5,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+291,2024-05-25,Saturday,21,5,Biscuits,Bakery,7,pack,40,50,350,70,cash,Walk-in,paid
+292,2024-05-25,Saturday,21,5,Soap (Lifebuoy),Household,3,pcs,70,90,270,60,cash,Walk-in,paid
+293,2024-05-25,Saturday,21,5,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+294,2024-05-25,Saturday,21,5,Eggs,Dairy,22,pcs,20,25,550,110,udhar,Tariq Bhai,pending
+295,2024-05-25,Saturday,21,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+296,2024-05-25,Saturday,21,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+297,2024-05-25,Saturday,21,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+298,2024-05-25,Saturday,21,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+299,2024-05-25,Saturday,21,5,Salt,Grocery,5,kg,20,30,150,50,cash,Walk-in,paid
+300,2024-05-25,Saturday,21,5,Salt,Grocery,4,kg,20,30,120,40,cash,Walk-in,paid
+301,2024-05-25,Saturday,21,5,Chips (Lays),Beverages,9,pack,30,40,360,90,cash,Walk-in,paid
+302,2024-05-26,Sunday,21,5,Milk,Dairy,2,litre,180,200,400,40,cash,Walk-in,paid
+303,2024-05-26,Sunday,21,5,Bread,Bakery,12,pcs,50,60,720,120,cash,Walk-in,paid
+304,2024-05-26,Sunday,21,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+305,2024-05-26,Sunday,21,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,overdue
+306,2024-05-26,Sunday,21,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+307,2024-05-26,Sunday,21,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+308,2024-05-26,Sunday,21,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+309,2024-05-26,Sunday,21,5,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+310,2024-05-26,Sunday,21,5,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+311,2024-05-26,Sunday,21,5,Eggs,Dairy,12,pcs,20,25,300,60,udhar,Tariq Bhai,pending
+312,2024-05-26,Sunday,21,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+313,2024-05-26,Sunday,21,5,Salt,Grocery,2,kg,20,30,60,20,udhar,Fatima Bibi,paid
+314,2024-05-26,Sunday,21,5,Chips (Lays),Beverages,9,pack,30,40,360,90,cash,Walk-in,paid
+315,2024-05-27,Monday,22,5,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+316,2024-05-27,Monday,22,5,Sugar,Grocery,5,kg,90,100,500,50,udhar,Sara Khan,overdue
+317,2024-05-27,Monday,22,5,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+318,2024-05-27,Monday,22,5,Milk,Dairy,3,litre,180,200,600,60,udhar,Tariq Bhai,paid
+319,2024-05-27,Monday,22,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+320,2024-05-27,Monday,22,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+321,2024-05-27,Monday,22,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Bilal Hardware,pending
+322,2024-05-27,Monday,22,5,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Ahmed Raza,overdue
+323,2024-05-27,Monday,22,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Fatima Bibi,pending
+324,2024-05-27,Monday,22,5,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+325,2024-05-27,Monday,22,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+326,2024-05-27,Monday,22,5,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+327,2024-05-27,Monday,22,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+328,2024-05-27,Monday,22,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+329,2024-05-27,Monday,22,5,Salt,Grocery,3,kg,20,30,90,30,udhar,Usman Store,pending
+330,2024-05-28,Tuesday,22,5,Sugar,Grocery,6,kg,90,100,600,60,udhar,Fatima Bibi,pending
+331,2024-05-28,Tuesday,22,5,Sugar,Grocery,7,kg,90,100,700,70,udhar,Fatima Bibi,paid
+332,2024-05-28,Tuesday,22,5,Sugar,Grocery,10,kg,90,100,1000,100,udhar,Fatima Bibi,paid
+333,2024-05-28,Tuesday,22,5,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+334,2024-05-28,Tuesday,22,5,Bread,Bakery,18,pcs,50,60,1080,180,cash,Walk-in,paid
+335,2024-05-28,Tuesday,22,5,Rice (Basmati),Grocery,13,kg,280,320,4160,520,cash,Walk-in,paid
+336,2024-05-28,Tuesday,22,5,Rice (Basmati),Grocery,17,kg,280,320,5440,680,cash,Walk-in,paid
+337,2024-05-28,Tuesday,22,5,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Tariq Bhai,overdue
+338,2024-05-28,Tuesday,22,5,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Bilal Hardware,pending
+339,2024-05-28,Tuesday,22,5,Biscuits,Bakery,5,pack,40,50,250,50,udhar,Tariq Bhai,pending
+340,2024-05-28,Tuesday,22,5,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+341,2024-05-28,Tuesday,22,5,Flour (Atta),Grocery,7,kg,70,80,560,70,udhar,Bilal Hardware,pending
+342,2024-05-28,Tuesday,22,5,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+343,2024-05-28,Tuesday,22,5,Eggs,Dairy,16,pcs,20,25,400,80,cash,Walk-in,paid
+344,2024-05-28,Tuesday,22,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+345,2024-05-28,Tuesday,22,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+346,2024-05-28,Tuesday,22,5,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+347,2024-05-29,Wednesday,22,5,Sugar,Grocery,12,kg,90,100,1200,120,cash,Walk-in,paid
+348,2024-05-29,Wednesday,22,5,Milk,Dairy,7,litre,180,200,1400,140,cash,Walk-in,paid
+349,2024-05-29,Wednesday,22,5,Bread,Bakery,8,pcs,50,60,480,80,cash,Walk-in,paid
+350,2024-05-29,Wednesday,22,5,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+351,2024-05-29,Wednesday,22,5,Bread,Bakery,13,pcs,50,60,780,130,cash,Walk-in,paid
+352,2024-05-29,Wednesday,22,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+353,2024-05-29,Wednesday,22,5,Rice (Basmati),Grocery,12,kg,280,320,3840,480,udhar,Tariq Bhai,paid
+354,2024-05-29,Wednesday,22,5,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Tariq Bhai,pending
+355,2024-05-29,Wednesday,22,5,Flour (Atta),Grocery,7,kg,70,80,560,70,cash,Walk-in,paid
+356,2024-05-29,Wednesday,22,5,Flour (Atta),Grocery,11,kg,70,80,880,110,cash,Walk-in,paid
+357,2024-05-29,Wednesday,22,5,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+358,2024-05-29,Wednesday,22,5,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+359,2024-05-29,Wednesday,22,5,Salt,Grocery,2,kg,20,30,60,20,udhar,Tariq Bhai,pending
+360,2024-05-29,Wednesday,22,5,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+361,2024-05-29,Wednesday,22,5,Chips (Lays),Beverages,7,pack,30,40,280,70,udhar,Usman Store,pending
+362,2024-05-30,Thursday,22,5,Sugar,Grocery,5,kg,90,100,500,50,udhar,Sara Khan,paid
+363,2024-05-30,Thursday,22,5,Milk,Dairy,7,litre,180,200,1400,140,udhar,Fatima Bibi,pending
+364,2024-05-30,Thursday,22,5,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+365,2024-05-30,Thursday,22,5,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+366,2024-05-30,Thursday,22,5,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Fatima Bibi,paid
+367,2024-05-30,Thursday,22,5,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,cash,Walk-in,paid
+368,2024-05-30,Thursday,22,5,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+369,2024-05-30,Thursday,22,5,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+370,2024-05-30,Thursday,22,5,Flour (Atta),Grocery,7,kg,70,80,560,70,cash,Walk-in,paid
+371,2024-05-30,Thursday,22,5,Eggs,Dairy,12,pcs,20,25,300,60,cash,Walk-in,paid
+372,2024-05-30,Thursday,22,5,Eggs,Dairy,18,pcs,20,25,450,90,cash,Walk-in,paid
+373,2024-05-30,Thursday,22,5,Butter,Dairy,3,pcs,120,140,420,60,udhar,Fatima Bibi,pending
+374,2024-05-30,Thursday,22,5,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+375,2024-05-31,Friday,22,5,Milk,Dairy,9,litre,180,200,1800,180,udhar,Tariq Bhai,pending
+376,2024-05-31,Friday,22,5,Bread,Bakery,17,pcs,50,60,1020,170,cash,Walk-in,paid
+377,2024-05-31,Friday,22,5,Bread,Bakery,21,pcs,50,60,1260,210,cash,Walk-in,paid
+378,2024-05-31,Friday,22,5,Bread,Bakery,16,pcs,50,60,960,160,udhar,Usman Store,pending
+379,2024-05-31,Friday,22,5,Rice (Basmati),Grocery,28,kg,280,320,8960,1120,udhar,Sara Khan,overdue
+380,2024-05-31,Friday,22,5,Cooking Oil,Grocery,4,litre,480,530,2120,200,cash,Walk-in,paid
+381,2024-05-31,Friday,22,5,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,cash,Walk-in,paid
+382,2024-05-31,Friday,22,5,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+383,2024-05-31,Friday,22,5,Flour (Atta),Grocery,14,kg,70,80,1120,140,cash,Walk-in,paid
+384,2024-05-31,Friday,22,5,Eggs,Dairy,28,pcs,20,25,700,140,cash,Walk-in,paid
+385,2024-05-31,Friday,22,5,Eggs,Dairy,26,pcs,20,25,650,130,cash,Walk-in,paid
+386,2024-05-31,Friday,22,5,Eggs,Dairy,23,pcs,20,25,575,115,udhar,Usman Store,overdue
+387,2024-05-31,Friday,22,5,Butter,Dairy,4,pcs,120,140,560,80,udhar,Tariq Bhai,pending
+388,2024-05-31,Friday,22,5,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+389,2024-05-31,Friday,22,5,Salt,Grocery,5,kg,20,30,150,50,cash,Walk-in,paid
+390,2024-05-31,Friday,22,5,Chips (Lays),Beverages,11,pack,30,40,440,110,udhar,Bilal Hardware,pending
+391,2024-06-01,Saturday,22,6,Rice (Basmati),Grocery,15,kg,280,320,4800,600,udhar,Sara Khan,paid
+392,2024-06-01,Saturday,22,6,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+393,2024-06-01,Saturday,22,6,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+394,2024-06-01,Saturday,22,6,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+395,2024-06-01,Saturday,22,6,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+396,2024-06-01,Saturday,22,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+397,2024-06-01,Saturday,22,6,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+398,2024-06-01,Saturday,22,6,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+399,2024-06-01,Saturday,22,6,Matches,Household,1,box,5,10,10,5,udhar,Sara Khan,pending
+400,2024-06-02,Sunday,22,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+401,2024-06-02,Sunday,22,6,Milk,Dairy,2,litre,180,200,400,40,cash,Walk-in,paid
+402,2024-06-02,Sunday,22,6,Bread,Bakery,9,pcs,50,60,540,90,cash,Walk-in,paid
+403,2024-06-02,Sunday,22,6,Bread,Bakery,11,pcs,50,60,660,110,cash,Walk-in,paid
+404,2024-06-02,Sunday,22,6,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+405,2024-06-02,Sunday,22,6,Rice (Basmati),Grocery,12,kg,280,320,3840,480,cash,Walk-in,paid
+406,2024-06-02,Sunday,22,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+407,2024-06-02,Sunday,22,6,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Bilal Hardware,paid
+408,2024-06-02,Sunday,22,6,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Bilal Hardware,paid
+409,2024-06-02,Sunday,22,6,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+410,2024-06-02,Sunday,22,6,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+411,2024-06-02,Sunday,22,6,Flour (Atta),Grocery,7,kg,70,80,560,70,cash,Walk-in,paid
+412,2024-06-02,Sunday,22,6,Flour (Atta),Grocery,8,kg,70,80,640,80,udhar,Tariq Bhai,overdue
+413,2024-06-03,Monday,23,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+414,2024-06-03,Monday,23,6,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+415,2024-06-03,Monday,23,6,Bread,Bakery,5,pcs,50,60,300,50,udhar,Fatima Bibi,overdue
+416,2024-06-03,Monday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+417,2024-06-03,Monday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Bilal Hardware,pending
+418,2024-06-03,Monday,23,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+419,2024-06-03,Monday,23,6,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+420,2024-06-03,Monday,23,6,Eggs,Dairy,16,pcs,20,25,400,80,udhar,Sara Khan,overdue
+421,2024-06-03,Monday,23,6,Eggs,Dairy,7,pcs,20,25,175,35,cash,Walk-in,paid
+422,2024-06-03,Monday,23,6,Eggs,Dairy,11,pcs,20,25,275,55,cash,Walk-in,paid
+423,2024-06-03,Monday,23,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+424,2024-06-03,Monday,23,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+425,2024-06-03,Monday,23,6,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+426,2024-06-03,Monday,23,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+427,2024-06-03,Monday,23,6,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+428,2024-06-04,Tuesday,23,6,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+429,2024-06-04,Tuesday,23,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Bilal Hardware,pending
+430,2024-06-04,Tuesday,23,6,Bread,Bakery,6,pcs,50,60,360,60,cash,Walk-in,paid
+431,2024-06-04,Tuesday,23,6,Bread,Bakery,11,pcs,50,60,660,110,cash,Walk-in,paid
+432,2024-06-04,Tuesday,23,6,Rice (Basmati),Grocery,10,kg,280,320,3200,400,cash,Walk-in,paid
+433,2024-06-04,Tuesday,23,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Ahmed Raza,paid
+434,2024-06-04,Tuesday,23,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+435,2024-06-04,Tuesday,23,6,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Usman Store,paid
+436,2024-06-04,Tuesday,23,6,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+437,2024-06-04,Tuesday,23,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+438,2024-06-04,Tuesday,23,6,Flour (Atta),Grocery,4,kg,70,80,320,40,cash,Walk-in,paid
+439,2024-06-04,Tuesday,23,6,Eggs,Dairy,11,pcs,20,25,275,55,cash,Walk-in,paid
+440,2024-06-04,Tuesday,23,6,Eggs,Dairy,15,pcs,20,25,375,75,udhar,Sara Khan,pending
+441,2024-06-04,Tuesday,23,6,Eggs,Dairy,3,pcs,20,25,75,15,udhar,Sara Khan,pending
+442,2024-06-04,Tuesday,23,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+443,2024-06-04,Tuesday,23,6,Salt,Grocery,3,kg,20,30,90,30,udhar,Sara Khan,pending
+444,2024-06-04,Tuesday,23,6,Salt,Grocery,1,kg,20,30,30,10,udhar,Ahmed Raza,pending
+445,2024-06-04,Tuesday,23,6,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+446,2024-06-04,Tuesday,23,6,Matches,Household,1,box,5,10,10,5,udhar,Bilal Hardware,pending
+447,2024-06-05,Wednesday,23,6,Sugar,Grocery,6,kg,90,100,600,60,udhar,Bilal Hardware,overdue
+448,2024-06-05,Wednesday,23,6,Bread,Bakery,9,pcs,50,60,540,90,udhar,Ahmed Raza,overdue
+449,2024-06-05,Wednesday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Usman Store,pending
+450,2024-06-05,Wednesday,23,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+451,2024-06-05,Wednesday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+452,2024-06-05,Wednesday,23,6,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+453,2024-06-05,Wednesday,23,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Bilal Hardware,paid
+454,2024-06-05,Wednesday,23,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,udhar,Bilal Hardware,paid
+455,2024-06-05,Wednesday,23,6,Flour (Atta),Grocery,13,kg,70,80,1040,130,cash,Walk-in,paid
+456,2024-06-05,Wednesday,23,6,Flour (Atta),Grocery,5,kg,70,80,400,50,cash,Walk-in,paid
+457,2024-06-05,Wednesday,23,6,Flour (Atta),Grocery,14,kg,70,80,1120,140,cash,Walk-in,paid
+458,2024-06-05,Wednesday,23,6,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+459,2024-06-05,Wednesday,23,6,Eggs,Dairy,2,pcs,20,25,50,10,udhar,Usman Store,pending
+460,2024-06-05,Wednesday,23,6,Eggs,Dairy,12,pcs,20,25,300,60,udhar,Sara Khan,pending
+461,2024-06-05,Wednesday,23,6,Butter,Dairy,1,pcs,120,140,140,20,udhar,Sara Khan,overdue
+462,2024-06-05,Wednesday,23,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+463,2024-06-05,Wednesday,23,6,Salt,Grocery,3,kg,20,30,90,30,udhar,Fatima Bibi,pending
+464,2024-06-05,Wednesday,23,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+465,2024-06-06,Thursday,23,6,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+466,2024-06-06,Thursday,23,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+467,2024-06-06,Thursday,23,6,Milk,Dairy,1,litre,180,200,200,20,cash,Walk-in,paid
+468,2024-06-06,Thursday,23,6,Bread,Bakery,7,pcs,50,60,420,70,cash,Walk-in,paid
+469,2024-06-06,Thursday,23,6,Rice (Basmati),Grocery,7,kg,280,320,2240,280,udhar,Tariq Bhai,paid
+470,2024-06-06,Thursday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+471,2024-06-06,Thursday,23,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,udhar,Fatima Bibi,paid
+472,2024-06-06,Thursday,23,6,Flour (Atta),Grocery,11,kg,70,80,880,110,udhar,Tariq Bhai,paid
+473,2024-06-06,Thursday,23,6,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+474,2024-06-06,Thursday,23,6,Eggs,Dairy,10,pcs,20,25,250,50,cash,Walk-in,paid
+475,2024-06-06,Thursday,23,6,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+476,2024-06-06,Thursday,23,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+477,2024-06-06,Thursday,23,6,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+478,2024-06-07,Friday,23,6,Sugar,Grocery,9,kg,90,100,900,90,udhar,Usman Store,pending
+479,2024-06-07,Friday,23,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Sara Khan,paid
+480,2024-06-07,Friday,23,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Tariq Bhai,pending
+481,2024-06-07,Friday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+482,2024-06-07,Friday,23,6,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+483,2024-06-07,Friday,23,6,Juice (Nestle),Beverages,2,pack,80,100,200,40,udhar,Usman Store,paid
+484,2024-06-07,Friday,23,6,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+485,2024-06-07,Friday,23,6,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+486,2024-06-07,Friday,23,6,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+487,2024-06-07,Friday,23,6,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+488,2024-06-08,Saturday,23,6,Sugar,Grocery,9,kg,90,100,900,90,cash,Walk-in,paid
+489,2024-06-08,Saturday,23,6,Milk,Dairy,7,litre,180,200,1400,140,cash,Walk-in,paid
+490,2024-06-08,Saturday,23,6,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Ahmed Raza,pending
+491,2024-06-08,Saturday,23,6,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Ahmed Raza,pending
+492,2024-06-08,Saturday,23,6,Biscuits,Bakery,2,pack,40,50,100,20,udhar,Bilal Hardware,paid
+493,2024-06-08,Saturday,23,6,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+494,2024-06-08,Saturday,23,6,Flour (Atta),Grocery,14,kg,70,80,1120,140,udhar,Sara Khan,overdue
+495,2024-06-08,Saturday,23,6,Flour (Atta),Grocery,13,kg,70,80,1040,130,cash,Walk-in,paid
+496,2024-06-08,Saturday,23,6,Eggs,Dairy,11,pcs,20,25,275,55,udhar,Fatima Bibi,pending
+497,2024-06-08,Saturday,23,6,Eggs,Dairy,18,pcs,20,25,450,90,udhar,Tariq Bhai,paid
+498,2024-06-08,Saturday,23,6,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+499,2024-06-08,Saturday,23,6,Salt,Grocery,5,kg,20,30,150,50,udhar,Fatima Bibi,pending
+500,2024-06-08,Saturday,23,6,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+501,2024-06-08,Saturday,23,6,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+502,2024-06-09,Sunday,23,6,Sugar,Grocery,6,kg,90,100,600,60,udhar,Ahmed Raza,overdue
+503,2024-06-09,Sunday,23,6,Milk,Dairy,2,litre,180,200,400,40,cash,Walk-in,paid
+504,2024-06-09,Sunday,23,6,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+505,2024-06-09,Sunday,23,6,Milk,Dairy,1,litre,180,200,200,20,udhar,Ahmed Raza,overdue
+506,2024-06-09,Sunday,23,6,Bread,Bakery,3,pcs,50,60,180,30,cash,Walk-in,paid
+507,2024-06-09,Sunday,23,6,Bread,Bakery,6,pcs,50,60,360,60,cash,Walk-in,paid
+508,2024-06-09,Sunday,23,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+509,2024-06-09,Sunday,23,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+510,2024-06-09,Sunday,23,6,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+511,2024-06-09,Sunday,23,6,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Usman Store,paid
+512,2024-06-09,Sunday,23,6,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,cash,Walk-in,paid
+513,2024-06-09,Sunday,23,6,Eggs,Dairy,9,pcs,20,25,225,45,cash,Walk-in,paid
+514,2024-06-09,Sunday,23,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+515,2024-06-09,Sunday,23,6,Butter,Dairy,2,pcs,120,140,280,40,udhar,Sara Khan,paid
+516,2024-06-09,Sunday,23,6,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+517,2024-06-09,Sunday,23,6,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+518,2024-06-10,Monday,24,6,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+519,2024-06-10,Monday,24,6,Milk,Dairy,1,litre,180,200,200,20,cash,Walk-in,paid
+520,2024-06-10,Monday,24,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Sara Khan,paid
+521,2024-06-10,Monday,24,6,Rice (Basmati),Grocery,8,kg,280,320,2560,320,cash,Walk-in,paid
+522,2024-06-10,Monday,24,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+523,2024-06-10,Monday,24,6,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,udhar,Ahmed Raza,paid
+524,2024-06-10,Monday,24,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+525,2024-06-10,Monday,24,6,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+526,2024-06-10,Monday,24,6,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+527,2024-06-10,Monday,24,6,Eggs,Dairy,7,pcs,20,25,175,35,cash,Walk-in,paid
+528,2024-06-10,Monday,24,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+529,2024-06-10,Monday,24,6,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+530,2024-06-11,Tuesday,24,6,Sugar,Grocery,6,kg,90,100,600,60,udhar,Bilal Hardware,pending
+531,2024-06-11,Tuesday,24,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+532,2024-06-11,Tuesday,24,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Sara Khan,paid
+533,2024-06-11,Tuesday,24,6,Rice (Basmati),Grocery,7,kg,280,320,2240,280,udhar,Sara Khan,overdue
+534,2024-06-11,Tuesday,24,6,Rice (Basmati),Grocery,10,kg,280,320,3200,400,udhar,Tariq Bhai,paid
+535,2024-06-11,Tuesday,24,6,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+536,2024-06-11,Tuesday,24,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+537,2024-06-11,Tuesday,24,6,Tea (Lipton),Beverages,2,pack,320,370,740,100,cash,Walk-in,paid
+538,2024-06-11,Tuesday,24,6,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Ahmed Raza,paid
+539,2024-06-11,Tuesday,24,6,Flour (Atta),Grocery,7,kg,70,80,560,70,udhar,Sara Khan,paid
+540,2024-06-11,Tuesday,24,6,Eggs,Dairy,21,pcs,20,25,525,105,cash,Walk-in,paid
+541,2024-06-11,Tuesday,24,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+542,2024-06-11,Tuesday,24,6,Butter,Dairy,4,pcs,120,140,560,80,udhar,Tariq Bhai,paid
+543,2024-06-11,Tuesday,24,6,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+544,2024-06-11,Tuesday,24,6,Salt,Grocery,3,kg,20,30,90,30,udhar,Tariq Bhai,paid
+545,2024-06-11,Tuesday,24,6,Chips (Lays),Beverages,4,pack,30,40,160,40,udhar,Tariq Bhai,pending
+546,2024-06-12,Wednesday,24,6,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+547,2024-06-12,Wednesday,24,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+548,2024-06-12,Wednesday,24,6,Flour (Atta),Grocery,7,kg,70,80,560,70,udhar,Sara Khan,paid
+549,2024-06-12,Wednesday,24,6,Eggs,Dairy,14,pcs,20,25,350,70,udhar,Tariq Bhai,pending
+550,2024-06-12,Wednesday,24,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+551,2024-06-12,Wednesday,24,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+552,2024-06-12,Wednesday,24,6,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+553,2024-06-13,Thursday,24,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+554,2024-06-13,Thursday,24,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Usman Store,pending
+555,2024-06-13,Thursday,24,6,Bread,Bakery,9,pcs,50,60,540,90,cash,Walk-in,paid
+556,2024-06-13,Thursday,24,6,Rice (Basmati),Grocery,3,kg,280,320,960,120,cash,Walk-in,paid
+557,2024-06-13,Thursday,24,6,Rice (Basmati),Grocery,3,kg,280,320,960,120,cash,Walk-in,paid
+558,2024-06-13,Thursday,24,6,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+559,2024-06-13,Thursday,24,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Usman Store,overdue
+560,2024-06-13,Thursday,24,6,Flour (Atta),Grocery,13,kg,70,80,1040,130,udhar,Sara Khan,paid
+561,2024-06-13,Thursday,24,6,Eggs,Dairy,14,pcs,20,25,350,70,cash,Walk-in,paid
+562,2024-06-13,Thursday,24,6,Butter,Dairy,1,pcs,120,140,140,20,udhar,Fatima Bibi,pending
+563,2024-06-13,Thursday,24,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+564,2024-06-13,Thursday,24,6,Salt,Grocery,4,kg,20,30,120,40,udhar,Sara Khan,pending
+565,2024-06-13,Thursday,24,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+566,2024-06-13,Thursday,24,6,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+567,2024-06-14,Friday,24,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Fatima Bibi,pending
+568,2024-06-14,Friday,24,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Bilal Hardware,pending
+569,2024-06-14,Friday,24,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+570,2024-06-14,Friday,24,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Ahmed Raza,pending
+571,2024-06-14,Friday,24,6,Flour (Atta),Grocery,18,kg,70,80,1440,180,cash,Walk-in,paid
+572,2024-06-14,Friday,24,6,Butter,Dairy,2,pcs,120,140,280,40,udhar,Fatima Bibi,overdue
+573,2024-06-14,Friday,24,6,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+574,2024-06-14,Friday,24,6,Butter,Dairy,2,pcs,120,140,280,40,udhar,Bilal Hardware,overdue
+575,2024-06-14,Friday,24,6,Chips (Lays),Beverages,5,pack,30,40,200,50,udhar,Usman Store,pending
+576,2024-06-14,Friday,24,6,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+577,2024-06-14,Friday,24,6,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+578,2024-06-15,Saturday,24,6,Sugar,Grocery,12,kg,90,100,1200,120,cash,Walk-in,paid
+579,2024-06-15,Saturday,24,6,Milk,Dairy,5,litre,180,200,1000,100,udhar,Usman Store,pending
+580,2024-06-15,Saturday,24,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Ahmed Raza,paid
+581,2024-06-15,Saturday,24,6,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Fatima Bibi,pending
+582,2024-06-15,Saturday,24,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+583,2024-06-15,Saturday,24,6,Biscuits,Bakery,5,pack,40,50,250,50,udhar,Tariq Bhai,pending
+584,2024-06-15,Saturday,24,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Fatima Bibi,pending
+585,2024-06-15,Saturday,24,6,Flour (Atta),Grocery,13,kg,70,80,1040,130,cash,Walk-in,paid
+586,2024-06-15,Saturday,24,6,Flour (Atta),Grocery,15,kg,70,80,1200,150,cash,Walk-in,paid
+587,2024-06-15,Saturday,24,6,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+588,2024-06-15,Saturday,24,6,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+589,2024-06-15,Saturday,24,6,Salt,Grocery,3,kg,20,30,90,30,udhar,Ahmed Raza,overdue
+590,2024-06-15,Saturday,24,6,Chips (Lays),Beverages,9,pack,30,40,360,90,cash,Walk-in,paid
+591,2024-06-15,Saturday,24,6,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+592,2024-06-16,Sunday,24,6,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+593,2024-06-16,Sunday,24,6,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+594,2024-06-16,Sunday,24,6,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+595,2024-06-16,Sunday,24,6,Milk,Dairy,5,litre,180,200,1000,100,udhar,Fatima Bibi,overdue
+596,2024-06-16,Sunday,24,6,Bread,Bakery,12,pcs,50,60,720,120,cash,Walk-in,paid
+597,2024-06-16,Sunday,24,6,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+598,2024-06-16,Sunday,24,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+599,2024-06-16,Sunday,24,6,Salt,Grocery,1,kg,20,30,30,10,udhar,Usman Store,pending
+600,2024-06-16,Sunday,24,6,Salt,Grocery,1,kg,20,30,30,10,udhar,Fatima Bibi,overdue
+601,2024-06-16,Sunday,24,6,Chips (Lays),Beverages,3,pack,30,40,120,30,udhar,Usman Store,pending
+602,2024-06-16,Sunday,24,6,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+603,2024-06-17,Monday,25,6,Rice (Basmati),Grocery,3,kg,280,320,960,120,cash,Walk-in,paid
+604,2024-06-17,Monday,25,6,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+605,2024-06-17,Monday,25,6,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Fatima Bibi,paid
+606,2024-06-17,Monday,25,6,Tea (Lipton),Beverages,2,pack,320,370,740,100,cash,Walk-in,paid
+607,2024-06-17,Monday,25,6,Biscuits,Bakery,6,pack,40,50,300,60,udhar,Sara Khan,paid
+608,2024-06-17,Monday,25,6,Biscuits,Bakery,5,pack,40,50,250,50,cash,Walk-in,paid
+609,2024-06-17,Monday,25,6,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+610,2024-06-17,Monday,25,6,Flour (Atta),Grocery,13,kg,70,80,1040,130,udhar,Tariq Bhai,overdue
+611,2024-06-17,Monday,25,6,Eggs,Dairy,6,pcs,20,25,150,30,udhar,Ahmed Raza,overdue
+612,2024-06-17,Monday,25,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+613,2024-06-17,Monday,25,6,Chips (Lays),Beverages,3,pack,30,40,120,30,udhar,Fatima Bibi,paid
+614,2024-06-17,Monday,25,6,Chips (Lays),Beverages,6,pack,30,40,240,60,udhar,Ahmed Raza,pending
+615,2024-06-17,Monday,25,6,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+616,2024-06-18,Tuesday,25,6,Sugar,Grocery,3,kg,90,100,300,30,cash,Walk-in,paid
+617,2024-06-18,Tuesday,25,6,Bread,Bakery,9,pcs,50,60,540,90,cash,Walk-in,paid
+618,2024-06-18,Tuesday,25,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+619,2024-06-18,Tuesday,25,6,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Tariq Bhai,paid
+620,2024-06-18,Tuesday,25,6,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+621,2024-06-18,Tuesday,25,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+622,2024-06-18,Tuesday,25,6,Flour (Atta),Grocery,3,kg,70,80,240,30,cash,Walk-in,paid
+623,2024-06-18,Tuesday,25,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+624,2024-06-18,Tuesday,25,6,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+625,2024-06-18,Tuesday,25,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+626,2024-06-19,Wednesday,25,6,Bread,Bakery,7,pcs,50,60,420,70,cash,Walk-in,paid
+627,2024-06-19,Wednesday,25,6,Bread,Bakery,13,pcs,50,60,780,130,cash,Walk-in,paid
+628,2024-06-19,Wednesday,25,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+629,2024-06-19,Wednesday,25,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+630,2024-06-19,Wednesday,25,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+631,2024-06-19,Wednesday,25,6,Biscuits,Bakery,2,pack,40,50,100,20,udhar,Bilal Hardware,pending
+632,2024-06-19,Wednesday,25,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Usman Store,overdue
+633,2024-06-19,Wednesday,25,6,Flour (Atta),Grocery,9,kg,70,80,720,90,udhar,Ahmed Raza,pending
+634,2024-06-19,Wednesday,25,6,Eggs,Dairy,14,pcs,20,25,350,70,cash,Walk-in,paid
+635,2024-06-19,Wednesday,25,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+636,2024-06-19,Wednesday,25,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+637,2024-06-19,Wednesday,25,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+638,2024-06-19,Wednesday,25,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+639,2024-06-19,Wednesday,25,6,Chips (Lays),Beverages,6,pack,30,40,240,60,udhar,Ahmed Raza,overdue
+640,2024-06-19,Wednesday,25,6,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+641,2024-06-20,Thursday,25,6,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+642,2024-06-20,Thursday,25,6,Milk,Dairy,3,litre,180,200,600,60,udhar,Ahmed Raza,paid
+643,2024-06-20,Thursday,25,6,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Bilal Hardware,pending
+644,2024-06-20,Thursday,25,6,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+645,2024-06-20,Thursday,25,6,Flour (Atta),Grocery,4,kg,70,80,320,40,udhar,Sara Khan,overdue
+646,2024-06-20,Thursday,25,6,Eggs,Dairy,11,pcs,20,25,275,55,udhar,Bilal Hardware,pending
+647,2024-06-20,Thursday,25,6,Eggs,Dairy,15,pcs,20,25,375,75,cash,Walk-in,paid
+648,2024-06-20,Thursday,25,6,Butter,Dairy,2,pcs,120,140,280,40,udhar,Sara Khan,paid
+649,2024-06-20,Thursday,25,6,Chips (Lays),Beverages,2,pack,30,40,80,20,udhar,Usman Store,paid
+650,2024-06-20,Thursday,25,6,Chips (Lays),Beverages,3,pack,30,40,120,30,udhar,Ahmed Raza,overdue
+651,2024-06-21,Friday,25,6,Sugar,Grocery,11,kg,90,100,1100,110,cash,Walk-in,paid
+652,2024-06-21,Friday,25,6,Sugar,Grocery,8,kg,90,100,800,80,udhar,Usman Store,pending
+653,2024-06-21,Friday,25,6,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+654,2024-06-21,Friday,25,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Bilal Hardware,overdue
+655,2024-06-21,Friday,25,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Tariq Bhai,overdue
+656,2024-06-21,Friday,25,6,Biscuits,Bakery,6,pack,40,50,300,60,cash,Walk-in,paid
+657,2024-06-21,Friday,25,6,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+658,2024-06-21,Friday,25,6,Biscuits,Bakery,9,pack,40,50,450,90,cash,Walk-in,paid
+659,2024-06-21,Friday,25,6,Salt,Grocery,2,kg,20,30,60,20,udhar,Sara Khan,pending
+660,2024-06-22,Saturday,25,6,Sugar,Grocery,11,kg,90,100,1100,110,udhar,Ahmed Raza,pending
+661,2024-06-22,Saturday,25,6,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+662,2024-06-22,Saturday,25,6,Milk,Dairy,7,litre,180,200,1400,140,cash,Walk-in,paid
+663,2024-06-22,Saturday,25,6,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+664,2024-06-22,Saturday,25,6,Milk,Dairy,6,litre,180,200,1200,120,udhar,Bilal Hardware,pending
+665,2024-06-22,Saturday,25,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+666,2024-06-22,Saturday,25,6,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+667,2024-06-22,Saturday,25,6,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Ahmed Raza,overdue
+668,2024-06-22,Saturday,25,6,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+669,2024-06-22,Saturday,25,6,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+670,2024-06-22,Saturday,25,6,Eggs,Dairy,20,pcs,20,25,500,100,udhar,Bilal Hardware,pending
+671,2024-06-22,Saturday,25,6,Butter,Dairy,4,pcs,120,140,560,80,udhar,Sara Khan,paid
+672,2024-06-22,Saturday,25,6,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+673,2024-06-22,Saturday,25,6,Chips (Lays),Beverages,5,pack,30,40,200,50,udhar,Tariq Bhai,overdue
+674,2024-06-23,Sunday,25,6,Sugar,Grocery,7,kg,90,100,700,70,udhar,Bilal Hardware,paid
+675,2024-06-23,Sunday,25,6,Milk,Dairy,4,litre,180,200,800,80,udhar,Ahmed Raza,pending
+676,2024-06-23,Sunday,25,6,Bread,Bakery,7,pcs,50,60,420,70,udhar,Ahmed Raza,paid
+677,2024-06-23,Sunday,25,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+678,2024-06-23,Sunday,25,6,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+679,2024-06-23,Sunday,25,6,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,udhar,Fatima Bibi,pending
+680,2024-06-23,Sunday,25,6,Flour (Atta),Grocery,11,kg,70,80,880,110,cash,Walk-in,paid
+681,2024-06-23,Sunday,25,6,Eggs,Dairy,9,pcs,20,25,225,45,cash,Walk-in,paid
+682,2024-06-23,Sunday,25,6,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+683,2024-06-23,Sunday,25,6,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+684,2024-06-24,Monday,26,6,Sugar,Grocery,8,kg,90,100,800,80,cash,Walk-in,paid
+685,2024-06-24,Monday,26,6,Milk,Dairy,6,litre,180,200,1200,120,cash,Walk-in,paid
+686,2024-06-24,Monday,26,6,Milk,Dairy,6,litre,180,200,1200,120,cash,Walk-in,paid
+687,2024-06-24,Monday,26,6,Bread,Bakery,8,pcs,50,60,480,80,cash,Walk-in,paid
+688,2024-06-24,Monday,26,6,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+689,2024-06-24,Monday,26,6,Rice (Basmati),Grocery,2,kg,280,320,640,80,cash,Walk-in,paid
+690,2024-06-24,Monday,26,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+691,2024-06-24,Monday,26,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+692,2024-06-24,Monday,26,6,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Usman Store,overdue
+693,2024-06-24,Monday,26,6,Flour (Atta),Grocery,3,kg,70,80,240,30,cash,Walk-in,paid
+694,2024-06-24,Monday,26,6,Eggs,Dairy,13,pcs,20,25,325,65,udhar,Bilal Hardware,pending
+695,2024-06-24,Monday,26,6,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+696,2024-06-24,Monday,26,6,Salt,Grocery,2,kg,20,30,60,20,udhar,Tariq Bhai,pending
+697,2024-06-24,Monday,26,6,Chips (Lays),Beverages,4,pack,30,40,160,40,udhar,Bilal Hardware,paid
+698,2024-06-25,Tuesday,26,6,Sugar,Grocery,7,kg,90,100,700,70,udhar,Sara Khan,pending
+699,2024-06-25,Tuesday,26,6,Sugar,Grocery,8,kg,90,100,800,80,udhar,Usman Store,paid
+700,2024-06-25,Tuesday,26,6,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+701,2024-06-25,Tuesday,26,6,Bread,Bakery,12,pcs,50,60,720,120,cash,Walk-in,paid
+702,2024-06-25,Tuesday,26,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+703,2024-06-25,Tuesday,26,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+704,2024-06-25,Tuesday,26,6,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+705,2024-06-25,Tuesday,26,6,Flour (Atta),Grocery,12,kg,70,80,960,120,udhar,Tariq Bhai,pending
+706,2024-06-25,Tuesday,26,6,Eggs,Dairy,8,pcs,20,25,200,40,cash,Walk-in,paid
+707,2024-06-25,Tuesday,26,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+708,2024-06-25,Tuesday,26,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+709,2024-06-25,Tuesday,26,6,Chips (Lays),Beverages,5,pack,30,40,200,50,udhar,Fatima Bibi,pending
+710,2024-06-25,Tuesday,26,6,Chips (Lays),Beverages,4,pack,30,40,160,40,cash,Walk-in,paid
+711,2024-06-26,Wednesday,26,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Bilal Hardware,overdue
+712,2024-06-26,Wednesday,26,6,Rice (Basmati),Grocery,6,kg,280,320,1920,240,cash,Walk-in,paid
+713,2024-06-26,Wednesday,26,6,Rice (Basmati),Grocery,24,kg,280,320,7680,960,cash,Walk-in,paid
+714,2024-06-26,Wednesday,26,6,Rice (Basmati),Grocery,8,kg,280,320,2560,320,cash,Walk-in,paid
+715,2024-06-26,Wednesday,26,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+716,2024-06-26,Wednesday,26,6,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+717,2024-06-26,Wednesday,26,6,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,cash,Walk-in,paid
+718,2024-06-26,Wednesday,26,6,Eggs,Dairy,5,pcs,20,25,125,25,cash,Walk-in,paid
+719,2024-06-26,Wednesday,26,6,Butter,Dairy,1,pcs,120,140,140,20,udhar,Sara Khan,paid
+720,2024-06-26,Wednesday,26,6,Salt,Grocery,3,kg,20,30,90,30,udhar,Sara Khan,pending
+721,2024-06-26,Wednesday,26,6,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+722,2024-06-27,Thursday,26,6,Milk,Dairy,7,litre,180,200,1400,140,udhar,Fatima Bibi,pending
+723,2024-06-27,Thursday,26,6,Bread,Bakery,12,pcs,50,60,720,120,udhar,Tariq Bhai,paid
+724,2024-06-27,Thursday,26,6,Rice (Basmati),Grocery,14,kg,280,320,4480,560,cash,Walk-in,paid
+725,2024-06-27,Thursday,26,6,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Bilal Hardware,overdue
+726,2024-06-27,Thursday,26,6,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Usman Store,pending
+727,2024-06-27,Thursday,26,6,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Tariq Bhai,paid
+728,2024-06-27,Thursday,26,6,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Ahmed Raza,pending
+729,2024-06-27,Thursday,26,6,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+730,2024-06-27,Thursday,26,6,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+731,2024-06-27,Thursday,26,6,Eggs,Dairy,22,pcs,20,25,550,110,udhar,Tariq Bhai,paid
+732,2024-06-27,Thursday,26,6,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+733,2024-06-28,Friday,26,6,Milk,Dairy,7,litre,180,200,1400,140,udhar,Usman Store,paid
+734,2024-06-28,Friday,26,6,Bread,Bakery,10,pcs,50,60,600,100,cash,Walk-in,paid
+735,2024-06-28,Friday,26,6,Rice (Basmati),Grocery,22,kg,280,320,7040,880,udhar,Bilal Hardware,pending
+736,2024-06-28,Friday,26,6,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+737,2024-06-28,Friday,26,6,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Ahmed Raza,pending
+738,2024-06-28,Friday,26,6,Cooking Oil,Grocery,5,litre,480,530,2650,250,udhar,Bilal Hardware,paid
+739,2024-06-28,Friday,26,6,Tea (Lipton),Beverages,3,pack,320,370,1110,150,cash,Walk-in,paid
+740,2024-06-28,Friday,26,6,Biscuits,Bakery,7,pack,40,50,350,70,cash,Walk-in,paid
+741,2024-06-28,Friday,26,6,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+742,2024-06-29,Saturday,26,6,Sugar,Grocery,9,kg,90,100,900,90,udhar,Bilal Hardware,pending
+743,2024-06-29,Saturday,26,6,Rice (Basmati),Grocery,17,kg,280,320,5440,680,cash,Walk-in,paid
+744,2024-06-29,Saturday,26,6,Rice (Basmati),Grocery,17,kg,280,320,5440,680,cash,Walk-in,paid
+745,2024-06-29,Saturday,26,6,Cooking Oil,Grocery,5,litre,480,530,2650,250,cash,Walk-in,paid
+746,2024-06-29,Saturday,26,6,Biscuits,Bakery,5,pack,40,50,250,50,cash,Walk-in,paid
+747,2024-06-29,Saturday,26,6,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+748,2024-06-29,Saturday,26,6,Eggs,Dairy,21,pcs,20,25,525,105,cash,Walk-in,paid
+749,2024-06-29,Saturday,26,6,Eggs,Dairy,28,pcs,20,25,700,140,cash,Walk-in,paid
+750,2024-06-29,Saturday,26,6,Butter,Dairy,5,pcs,120,140,700,100,udhar,Usman Store,paid
+751,2024-06-29,Saturday,26,6,Salt,Grocery,2,kg,20,30,60,20,udhar,Usman Store,paid
+752,2024-06-29,Saturday,26,6,Chips (Lays),Beverages,7,pack,30,40,280,70,udhar,Fatima Bibi,paid
+753,2024-06-30,Sunday,26,6,Sugar,Grocery,7,kg,90,100,700,70,udhar,Fatima Bibi,overdue
+754,2024-06-30,Sunday,26,6,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+755,2024-06-30,Sunday,26,6,Bread,Bakery,15,pcs,50,60,900,150,udhar,Bilal Hardware,pending
+756,2024-06-30,Sunday,26,6,Bread,Bakery,19,pcs,50,60,1140,190,cash,Walk-in,paid
+757,2024-06-30,Sunday,26,6,Rice (Basmati),Grocery,1,kg,280,320,320,40,cash,Walk-in,paid
+758,2024-06-30,Sunday,26,6,Rice (Basmati),Grocery,18,kg,280,320,5760,720,udhar,Sara Khan,pending
+759,2024-06-30,Sunday,26,6,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+760,2024-06-30,Sunday,26,6,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+761,2024-06-30,Sunday,26,6,Biscuits,Bakery,6,pack,40,50,300,60,cash,Walk-in,paid
+762,2024-06-30,Sunday,26,6,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Ahmed Raza,pending
+763,2024-06-30,Sunday,26,6,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+764,2024-06-30,Sunday,26,6,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+765,2024-06-30,Sunday,26,6,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+766,2024-07-01,Monday,27,7,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+767,2024-07-01,Monday,27,7,Milk,Dairy,3,litre,180,200,600,60,udhar,Sara Khan,paid
+768,2024-07-01,Monday,27,7,Milk,Dairy,5,litre,180,200,1000,100,cash,Walk-in,paid
+769,2024-07-01,Monday,27,7,Bread,Bakery,8,pcs,50,60,480,80,cash,Walk-in,paid
+770,2024-07-01,Monday,27,7,Bread,Bakery,11,pcs,50,60,660,110,udhar,Ahmed Raza,paid
+771,2024-07-01,Monday,27,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+772,2024-07-01,Monday,27,7,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,cash,Walk-in,paid
+773,2024-07-01,Monday,27,7,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+774,2024-07-01,Monday,27,7,Eggs,Dairy,14,pcs,20,25,350,70,cash,Walk-in,paid
+775,2024-07-01,Monday,27,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+776,2024-07-01,Monday,27,7,Butter,Dairy,1,pcs,120,140,140,20,udhar,Bilal Hardware,paid
+777,2024-07-01,Monday,27,7,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+778,2024-07-02,Tuesday,27,7,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+779,2024-07-02,Tuesday,27,7,Bread,Bakery,7,pcs,50,60,420,70,udhar,Fatima Bibi,overdue
+780,2024-07-02,Tuesday,27,7,Rice (Basmati),Grocery,8,kg,280,320,2560,320,udhar,Sara Khan,paid
+781,2024-07-02,Tuesday,27,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+782,2024-07-02,Tuesday,27,7,Tea (Lipton),Beverages,1,pack,320,370,370,50,udhar,Tariq Bhai,pending
+783,2024-07-02,Tuesday,27,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+784,2024-07-02,Tuesday,27,7,Eggs,Dairy,7,pcs,20,25,175,35,cash,Walk-in,paid
+785,2024-07-02,Tuesday,27,7,Eggs,Dairy,4,pcs,20,25,100,20,udhar,Tariq Bhai,overdue
+786,2024-07-02,Tuesday,27,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+787,2024-07-02,Tuesday,27,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Fatima Bibi,pending
+788,2024-07-03,Wednesday,27,7,Sugar,Grocery,8,kg,90,100,800,80,cash,Walk-in,paid
+789,2024-07-03,Wednesday,27,7,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+790,2024-07-03,Wednesday,27,7,Rice (Basmati),Grocery,5,kg,280,320,1600,200,cash,Walk-in,paid
+791,2024-07-03,Wednesday,27,7,Rice (Basmati),Grocery,12,kg,280,320,3840,480,udhar,Tariq Bhai,pending
+792,2024-07-03,Wednesday,27,7,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+793,2024-07-03,Wednesday,27,7,Cooking Oil,Grocery,3,litre,480,530,1590,150,udhar,Fatima Bibi,pending
+794,2024-07-03,Wednesday,27,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+795,2024-07-03,Wednesday,27,7,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+796,2024-07-03,Wednesday,27,7,Juice (Nestle),Beverages,3,pack,80,100,300,60,cash,Walk-in,paid
+797,2024-07-03,Wednesday,27,7,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+798,2024-07-03,Wednesday,27,7,Eggs,Dairy,6,pcs,20,25,150,30,cash,Walk-in,paid
+799,2024-07-03,Wednesday,27,7,Eggs,Dairy,11,pcs,20,25,275,55,udhar,Fatima Bibi,pending
+800,2024-07-03,Wednesday,27,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+801,2024-07-04,Thursday,27,7,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+802,2024-07-04,Thursday,27,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+803,2024-07-04,Thursday,27,7,Bread,Bakery,7,pcs,50,60,420,70,cash,Walk-in,paid
+804,2024-07-04,Thursday,27,7,Bread,Bakery,11,pcs,50,60,660,110,udhar,Usman Store,pending
+805,2024-07-04,Thursday,27,7,Rice (Basmati),Grocery,5,kg,280,320,1600,200,cash,Walk-in,paid
+806,2024-07-04,Thursday,27,7,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+807,2024-07-04,Thursday,27,7,Flour (Atta),Grocery,14,kg,70,80,1120,140,cash,Walk-in,paid
+808,2024-07-04,Thursday,27,7,Flour (Atta),Grocery,2,kg,70,80,160,20,udhar,Bilal Hardware,paid
+809,2024-07-04,Thursday,27,7,Flour (Atta),Grocery,3,kg,70,80,240,30,cash,Walk-in,paid
+810,2024-07-04,Thursday,27,7,Eggs,Dairy,12,pcs,20,25,300,60,cash,Walk-in,paid
+811,2024-07-04,Thursday,27,7,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+812,2024-07-04,Thursday,27,7,Salt,Grocery,3,kg,20,30,90,30,udhar,Ahmed Raza,pending
+813,2024-07-04,Thursday,27,7,Chips (Lays),Beverages,2,pack,30,40,80,20,cash,Walk-in,paid
+814,2024-07-05,Friday,27,7,Sugar,Grocery,10,kg,90,100,1000,100,udhar,Sara Khan,paid
+815,2024-07-05,Friday,27,7,Milk,Dairy,6,litre,180,200,1200,120,udhar,Bilal Hardware,overdue
+816,2024-07-05,Friday,27,7,Bread,Bakery,14,pcs,50,60,840,140,cash,Walk-in,paid
+817,2024-07-05,Friday,27,7,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Sara Khan,paid
+818,2024-07-05,Friday,27,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+819,2024-07-05,Friday,27,7,Biscuits,Bakery,9,pack,40,50,450,90,cash,Walk-in,paid
+820,2024-07-05,Friday,27,7,Juice (Nestle),Beverages,4,pack,80,100,400,80,cash,Walk-in,paid
+821,2024-07-05,Friday,27,7,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+822,2024-07-05,Friday,27,7,Eggs,Dairy,20,pcs,20,25,500,100,cash,Walk-in,paid
+823,2024-07-05,Friday,27,7,Eggs,Dairy,17,pcs,20,25,425,85,cash,Walk-in,paid
+824,2024-07-05,Friday,27,7,Butter,Dairy,1,pcs,120,140,140,20,udhar,Fatima Bibi,pending
+825,2024-07-05,Friday,27,7,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+826,2024-07-05,Friday,27,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Usman Store,pending
+827,2024-07-05,Friday,27,7,Salt,Grocery,3,kg,20,30,90,30,udhar,Bilal Hardware,overdue
+828,2024-07-05,Friday,27,7,Chips (Lays),Beverages,7,pack,30,40,280,70,cash,Walk-in,paid
+829,2024-07-06,Saturday,27,7,Milk,Dairy,8,litre,180,200,1600,160,cash,Walk-in,paid
+830,2024-07-06,Saturday,27,7,Bread,Bakery,18,pcs,50,60,1080,180,cash,Walk-in,paid
+831,2024-07-06,Saturday,27,7,Eggs,Dairy,21,pcs,20,25,525,105,cash,Walk-in,paid
+832,2024-07-06,Saturday,27,7,Salt,Grocery,5,kg,20,30,150,50,udhar,Fatima Bibi,overdue
+833,2024-07-07,Sunday,27,7,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+834,2024-07-07,Sunday,27,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+835,2024-07-07,Sunday,27,7,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+836,2024-07-07,Sunday,27,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+837,2024-07-07,Sunday,27,7,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+838,2024-07-07,Sunday,27,7,Rice (Basmati),Grocery,16,kg,280,320,5120,640,udhar,Ahmed Raza,pending
+839,2024-07-07,Sunday,27,7,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Sara Khan,paid
+840,2024-07-07,Sunday,27,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+841,2024-07-07,Sunday,27,7,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Usman Store,overdue
+842,2024-07-07,Sunday,27,7,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+843,2024-07-07,Sunday,27,7,Eggs,Dairy,14,pcs,20,25,350,70,cash,Walk-in,paid
+844,2024-07-07,Sunday,27,7,Eggs,Dairy,15,pcs,20,25,375,75,udhar,Tariq Bhai,pending
+845,2024-07-07,Sunday,27,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Tariq Bhai,paid
+846,2024-07-07,Sunday,27,7,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+847,2024-07-07,Sunday,27,7,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+848,2024-07-07,Sunday,27,7,Matches,Household,1,box,5,10,10,5,udhar,Tariq Bhai,overdue
+849,2024-07-08,Monday,28,7,Sugar,Grocery,8,kg,90,100,800,80,cash,Walk-in,paid
+850,2024-07-08,Monday,28,7,Milk,Dairy,3,litre,180,200,600,60,udhar,Ahmed Raza,pending
+851,2024-07-08,Monday,28,7,Bread,Bakery,4,pcs,50,60,240,40,cash,Walk-in,paid
+852,2024-07-08,Monday,28,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,pending
+853,2024-07-08,Monday,28,7,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Usman Store,paid
+854,2024-07-08,Monday,28,7,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+855,2024-07-08,Monday,28,7,Eggs,Dairy,13,pcs,20,25,325,65,udhar,Usman Store,pending
+856,2024-07-08,Monday,28,7,Butter,Dairy,1,pcs,120,140,140,20,udhar,Ahmed Raza,pending
+857,2024-07-08,Monday,28,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+858,2024-07-08,Monday,28,7,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+859,2024-07-08,Monday,28,7,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+860,2024-07-08,Monday,28,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+861,2024-07-09,Tuesday,28,7,Bread,Bakery,5,pcs,50,60,300,50,cash,Walk-in,paid
+862,2024-07-09,Tuesday,28,7,Rice (Basmati),Grocery,7,kg,280,320,2240,280,udhar,Ahmed Raza,pending
+863,2024-07-09,Tuesday,28,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+864,2024-07-09,Tuesday,28,7,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+865,2024-07-09,Tuesday,28,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+866,2024-07-09,Tuesday,28,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+867,2024-07-09,Tuesday,28,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+868,2024-07-09,Tuesday,28,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+869,2024-07-09,Tuesday,28,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+870,2024-07-09,Tuesday,28,7,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+871,2024-07-09,Tuesday,28,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Ahmed Raza,overdue
+872,2024-07-09,Tuesday,28,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+873,2024-07-10,Wednesday,28,7,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+874,2024-07-10,Wednesday,28,7,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+875,2024-07-10,Wednesday,28,7,Bread,Bakery,3,pcs,50,60,180,30,cash,Walk-in,paid
+876,2024-07-10,Wednesday,28,7,Rice (Basmati),Grocery,5,kg,280,320,1600,200,udhar,Tariq Bhai,paid
+877,2024-07-10,Wednesday,28,7,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+878,2024-07-10,Wednesday,28,7,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Sara Khan,paid
+879,2024-07-10,Wednesday,28,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+880,2024-07-10,Wednesday,28,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Bilal Hardware,overdue
+881,2024-07-10,Wednesday,28,7,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+882,2024-07-11,Thursday,28,7,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+883,2024-07-11,Thursday,28,7,Milk,Dairy,4,litre,180,200,800,80,udhar,Ahmed Raza,overdue
+884,2024-07-11,Thursday,28,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+885,2024-07-11,Thursday,28,7,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Ahmed Raza,pending
+886,2024-07-11,Thursday,28,7,Flour (Atta),Grocery,5,kg,70,80,400,50,cash,Walk-in,paid
+887,2024-07-11,Thursday,28,7,Butter,Dairy,1,pcs,120,140,140,20,udhar,Tariq Bhai,pending
+888,2024-07-11,Thursday,28,7,Salt,Grocery,2,kg,20,30,60,20,udhar,Usman Store,pending
+889,2024-07-11,Thursday,28,7,Chips (Lays),Beverages,1,pack,30,40,40,10,cash,Walk-in,paid
+890,2024-07-11,Thursday,28,7,Chips (Lays),Beverages,1,pack,30,40,40,10,udhar,Bilal Hardware,overdue
+891,2024-07-11,Thursday,28,7,Matches,Household,2,box,5,10,20,10,udhar,Tariq Bhai,pending
+892,2024-07-12,Friday,28,7,Sugar,Grocery,5,kg,90,100,500,50,udhar,Bilal Hardware,paid
+893,2024-07-12,Friday,28,7,Milk,Dairy,6,litre,180,200,1200,120,udhar,Bilal Hardware,paid
+894,2024-07-12,Friday,28,7,Milk,Dairy,7,litre,180,200,1400,140,udhar,Ahmed Raza,pending
+895,2024-07-12,Friday,28,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+896,2024-07-12,Friday,28,7,Bread,Bakery,16,pcs,50,60,960,160,cash,Walk-in,paid
+897,2024-07-12,Friday,28,7,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+898,2024-07-12,Friday,28,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+899,2024-07-12,Friday,28,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+900,2024-07-12,Friday,28,7,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+901,2024-07-12,Friday,28,7,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+902,2024-07-12,Friday,28,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+903,2024-07-13,Saturday,28,7,Sugar,Grocery,12,kg,90,100,1200,120,cash,Walk-in,paid
+904,2024-07-13,Saturday,28,7,Sugar,Grocery,4,kg,90,100,400,40,udhar,Usman Store,pending
+905,2024-07-13,Saturday,28,7,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+906,2024-07-13,Saturday,28,7,Bread,Bakery,9,pcs,50,60,540,90,cash,Walk-in,paid
+907,2024-07-13,Saturday,28,7,Bread,Bakery,14,pcs,50,60,840,140,cash,Walk-in,paid
+908,2024-07-13,Saturday,28,7,Rice (Basmati),Grocery,14,kg,280,320,4480,560,cash,Walk-in,paid
+909,2024-07-13,Saturday,28,7,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+910,2024-07-13,Saturday,28,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+911,2024-07-13,Saturday,28,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+912,2024-07-13,Saturday,28,7,Flour (Atta),Grocery,11,kg,70,80,880,110,cash,Walk-in,paid
+913,2024-07-13,Saturday,28,7,Eggs,Dairy,20,pcs,20,25,500,100,udhar,Tariq Bhai,paid
+914,2024-07-13,Saturday,28,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Tariq Bhai,overdue
+915,2024-07-13,Saturday,28,7,Chips (Lays),Beverages,7,pack,30,40,280,70,cash,Walk-in,paid
+916,2024-07-14,Sunday,28,7,Sugar,Grocery,6,kg,90,100,600,60,udhar,Usman Store,pending
+917,2024-07-14,Sunday,28,7,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+918,2024-07-14,Sunday,28,7,Milk,Dairy,2,litre,180,200,400,40,cash,Walk-in,paid
+919,2024-07-14,Sunday,28,7,Bread,Bakery,5,pcs,50,60,300,50,cash,Walk-in,paid
+920,2024-07-14,Sunday,28,7,Rice (Basmati),Grocery,5,kg,280,320,1600,200,cash,Walk-in,paid
+921,2024-07-14,Sunday,28,7,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+922,2024-07-14,Sunday,28,7,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+923,2024-07-14,Sunday,28,7,Biscuits,Bakery,1,pack,40,50,50,10,cash,Walk-in,paid
+924,2024-07-14,Sunday,28,7,Flour (Atta),Grocery,5,kg,70,80,400,50,cash,Walk-in,paid
+925,2024-07-14,Sunday,28,7,Flour (Atta),Grocery,5,kg,70,80,400,50,udhar,Tariq Bhai,overdue
+926,2024-07-14,Sunday,28,7,Flour (Atta),Grocery,2,kg,70,80,160,20,udhar,Ahmed Raza,overdue
+927,2024-07-14,Sunday,28,7,Eggs,Dairy,12,pcs,20,25,300,60,cash,Walk-in,paid
+928,2024-07-14,Sunday,28,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Sara Khan,pending
+929,2024-07-14,Sunday,28,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Fatima Bibi,pending
+930,2024-07-15,Monday,29,7,Milk,Dairy,2,litre,180,200,400,40,cash,Walk-in,paid
+931,2024-07-15,Monday,29,7,Rice (Basmati),Grocery,15,kg,280,320,4800,600,cash,Walk-in,paid
+932,2024-07-15,Monday,29,7,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+933,2024-07-15,Monday,29,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+934,2024-07-15,Monday,29,7,Biscuits,Bakery,4,pack,40,50,200,40,cash,Walk-in,paid
+935,2024-07-15,Monday,29,7,Flour (Atta),Grocery,5,kg,70,80,400,50,cash,Walk-in,paid
+936,2024-07-15,Monday,29,7,Eggs,Dairy,6,pcs,20,25,150,30,udhar,Usman Store,pending
+937,2024-07-15,Monday,29,7,Butter,Dairy,2,pcs,120,140,280,40,cash,Walk-in,paid
+938,2024-07-15,Monday,29,7,Chips (Lays),Beverages,1,pack,30,40,40,10,udhar,Sara Khan,paid
+939,2024-07-16,Tuesday,29,7,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+940,2024-07-16,Tuesday,29,7,Milk,Dairy,3,litre,180,200,600,60,udhar,Bilal Hardware,paid
+941,2024-07-16,Tuesday,29,7,Milk,Dairy,5,litre,180,200,1000,100,cash,Walk-in,paid
+942,2024-07-16,Tuesday,29,7,Bread,Bakery,13,pcs,50,60,780,130,udhar,Fatima Bibi,overdue
+943,2024-07-16,Tuesday,29,7,Rice (Basmati),Grocery,3,kg,280,320,960,120,cash,Walk-in,paid
+944,2024-07-16,Tuesday,29,7,Rice (Basmati),Grocery,6,kg,280,320,1920,240,cash,Walk-in,paid
+945,2024-07-16,Tuesday,29,7,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Fatima Bibi,paid
+946,2024-07-16,Tuesday,29,7,Flour (Atta),Grocery,10,kg,70,80,800,100,udhar,Fatima Bibi,overdue
+947,2024-07-16,Tuesday,29,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+948,2024-07-16,Tuesday,29,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+949,2024-07-16,Tuesday,29,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Ahmed Raza,pending
+950,2024-07-16,Tuesday,29,7,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+951,2024-07-16,Tuesday,29,7,Chips (Lays),Beverages,5,pack,30,40,200,50,udhar,Sara Khan,pending
+952,2024-07-16,Tuesday,29,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+953,2024-07-17,Wednesday,29,7,Sugar,Grocery,10,kg,90,100,1000,100,cash,Walk-in,paid
+954,2024-07-17,Wednesday,29,7,Bread,Bakery,13,pcs,50,60,780,130,cash,Walk-in,paid
+955,2024-07-17,Wednesday,29,7,Rice (Basmati),Grocery,7,kg,280,320,2240,280,cash,Walk-in,paid
+956,2024-07-17,Wednesday,29,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+957,2024-07-17,Wednesday,29,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+958,2024-07-17,Wednesday,29,7,Tea (Lipton),Beverages,3,pack,320,370,1110,150,cash,Walk-in,paid
+959,2024-07-17,Wednesday,29,7,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Usman Store,pending
+960,2024-07-17,Wednesday,29,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+961,2024-07-17,Wednesday,29,7,Flour (Atta),Grocery,9,kg,70,80,720,90,udhar,Tariq Bhai,pending
+962,2024-07-17,Wednesday,29,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+963,2024-07-17,Wednesday,29,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+964,2024-07-17,Wednesday,29,7,Chips (Lays),Beverages,2,pack,30,40,80,20,cash,Walk-in,paid
+965,2024-07-17,Wednesday,29,7,Matches,Household,1,box,5,10,10,5,udhar,Fatima Bibi,paid
+966,2024-07-18,Thursday,29,7,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+967,2024-07-18,Thursday,29,7,Bread,Bakery,7,pcs,50,60,420,70,cash,Walk-in,paid
+968,2024-07-18,Thursday,29,7,Rice (Basmati),Grocery,7,kg,280,320,2240,280,udhar,Usman Store,pending
+969,2024-07-18,Thursday,29,7,Cooking Oil,Grocery,1,litre,480,530,530,50,udhar,Bilal Hardware,overdue
+970,2024-07-18,Thursday,29,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+971,2024-07-18,Thursday,29,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+972,2024-07-18,Thursday,29,7,Biscuits,Bakery,2,pack,40,50,100,20,cash,Walk-in,paid
+973,2024-07-18,Thursday,29,7,Flour (Atta),Grocery,6,kg,70,80,480,60,udhar,Fatima Bibi,pending
+974,2024-07-18,Thursday,29,7,Flour (Atta),Grocery,6,kg,70,80,480,60,udhar,Fatima Bibi,paid
+975,2024-07-18,Thursday,29,7,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+976,2024-07-18,Thursday,29,7,Salt,Grocery,1,kg,20,30,30,10,udhar,Usman Store,overdue
+977,2024-07-18,Thursday,29,7,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+978,2024-07-18,Thursday,29,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+979,2024-07-19,Friday,29,7,Sugar,Grocery,9,kg,90,100,900,90,udhar,Ahmed Raza,pending
+980,2024-07-19,Friday,29,7,Bread,Bakery,9,pcs,50,60,540,90,udhar,Ahmed Raza,pending
+981,2024-07-19,Friday,29,7,Bread,Bakery,16,pcs,50,60,960,160,cash,Walk-in,paid
+982,2024-07-19,Friday,29,7,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Fatima Bibi,overdue
+983,2024-07-19,Friday,29,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Usman Store,pending
+984,2024-07-19,Friday,29,7,Flour (Atta),Grocery,14,kg,70,80,1120,140,udhar,Usman Store,overdue
+985,2024-07-19,Friday,29,7,Eggs,Dairy,21,pcs,20,25,525,105,cash,Walk-in,paid
+986,2024-07-19,Friday,29,7,Butter,Dairy,4,pcs,120,140,560,80,cash,Walk-in,paid
+987,2024-07-19,Friday,29,7,Butter,Dairy,3,pcs,120,140,420,60,cash,Walk-in,paid
+988,2024-07-19,Friday,29,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Ahmed Raza,paid
+989,2024-07-19,Friday,29,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+990,2024-07-19,Friday,29,7,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+991,2024-07-20,Saturday,29,7,Sugar,Grocery,12,kg,90,100,1200,120,cash,Walk-in,paid
+992,2024-07-20,Saturday,29,7,Rice (Basmati),Grocery,24,kg,280,320,7680,960,cash,Walk-in,paid
+993,2024-07-20,Saturday,29,7,Rice (Basmati),Grocery,18,kg,280,320,5760,720,cash,Walk-in,paid
+994,2024-07-20,Saturday,29,7,Tea (Lipton),Beverages,1,pack,320,370,370,50,cash,Walk-in,paid
+995,2024-07-20,Saturday,29,7,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Bilal Hardware,overdue
+996,2024-07-20,Saturday,29,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+997,2024-07-20,Saturday,29,7,Eggs,Dairy,16,pcs,20,25,400,80,cash,Walk-in,paid
+998,2024-07-20,Saturday,29,7,Matches,Household,1,box,5,10,10,5,udhar,Sara Khan,overdue
+999,2024-07-21,Sunday,29,7,Sugar,Grocery,6,kg,90,100,600,60,udhar,Ahmed Raza,overdue
+1000,2024-07-21,Sunday,29,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+1001,2024-07-21,Sunday,29,7,Bread,Bakery,5,pcs,50,60,300,50,cash,Walk-in,paid
+1002,2024-07-21,Sunday,29,7,Rice (Basmati),Grocery,16,kg,280,320,5120,640,cash,Walk-in,paid
+1003,2024-07-21,Sunday,29,7,Rice (Basmati),Grocery,9,kg,280,320,2880,360,cash,Walk-in,paid
+1004,2024-07-21,Sunday,29,7,Rice (Basmati),Grocery,10,kg,280,320,3200,400,cash,Walk-in,paid
+1005,2024-07-21,Sunday,29,7,Cooking Oil,Grocery,1,litre,480,530,530,50,cash,Walk-in,paid
+1006,2024-07-21,Sunday,29,7,Biscuits,Bakery,2,pack,40,50,100,20,udhar,Sara Khan,overdue
+1007,2024-07-21,Sunday,29,7,Juice (Nestle),Beverages,2,pack,80,100,200,40,cash,Walk-in,paid
+1008,2024-07-21,Sunday,29,7,Flour (Atta),Grocery,7,kg,70,80,560,70,cash,Walk-in,paid
+1009,2024-07-21,Sunday,29,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+1010,2024-07-21,Sunday,29,7,Chips (Lays),Beverages,3,pack,30,40,120,30,udhar,Fatima Bibi,overdue
+1011,2024-07-22,Monday,30,7,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+1012,2024-07-22,Monday,30,7,Rice (Basmati),Grocery,6,kg,280,320,1920,240,cash,Walk-in,paid
+1013,2024-07-22,Monday,30,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Bilal Hardware,pending
+1014,2024-07-22,Monday,30,7,Tea (Lipton),Beverages,2,pack,320,370,740,100,udhar,Bilal Hardware,pending
+1015,2024-07-22,Monday,30,7,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Ahmed Raza,paid
+1016,2024-07-22,Monday,30,7,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Tariq Bhai,pending
+1017,2024-07-22,Monday,30,7,Soap (Lifebuoy),Household,2,pcs,70,90,180,40,cash,Walk-in,paid
+1018,2024-07-22,Monday,30,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,udhar,Fatima Bibi,paid
+1019,2024-07-22,Monday,30,7,Flour (Atta),Grocery,14,kg,70,80,1120,140,cash,Walk-in,paid
+1020,2024-07-22,Monday,30,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+1021,2024-07-22,Monday,30,7,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+1022,2024-07-22,Monday,30,7,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+1023,2024-07-22,Monday,30,7,Chips (Lays),Beverages,6,pack,30,40,240,60,udhar,Usman Store,pending
+1024,2024-07-23,Tuesday,30,7,Sugar,Grocery,10,kg,90,100,1000,100,cash,Walk-in,paid
+1025,2024-07-23,Tuesday,30,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+1026,2024-07-23,Tuesday,30,7,Rice (Basmati),Grocery,8,kg,280,320,2560,320,cash,Walk-in,paid
+1027,2024-07-23,Tuesday,30,7,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+1028,2024-07-23,Tuesday,30,7,Rice (Basmati),Grocery,13,kg,280,320,4160,520,udhar,Sara Khan,paid
+1029,2024-07-23,Tuesday,30,7,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+1030,2024-07-23,Tuesday,30,7,Flour (Atta),Grocery,9,kg,70,80,720,90,cash,Walk-in,paid
+1031,2024-07-23,Tuesday,30,7,Flour (Atta),Grocery,8,kg,70,80,640,80,cash,Walk-in,paid
+1032,2024-07-23,Tuesday,30,7,Flour (Atta),Grocery,6,kg,70,80,480,60,udhar,Tariq Bhai,overdue
+1033,2024-07-23,Tuesday,30,7,Eggs,Dairy,12,pcs,20,25,300,60,cash,Walk-in,paid
+1034,2024-07-23,Tuesday,30,7,Butter,Dairy,1,pcs,120,140,140,20,cash,Walk-in,paid
+1035,2024-07-23,Tuesday,30,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+1036,2024-07-23,Tuesday,30,7,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+1037,2024-07-24,Wednesday,30,7,Sugar,Grocery,7,kg,90,100,700,70,cash,Walk-in,paid
+1038,2024-07-24,Wednesday,30,7,Bread,Bakery,8,pcs,50,60,480,80,udhar,Bilal Hardware,overdue
+1039,2024-07-24,Wednesday,30,7,Bread,Bakery,6,pcs,50,60,360,60,udhar,Sara Khan,pending
+1040,2024-07-24,Wednesday,30,7,Rice (Basmati),Grocery,5,kg,280,320,1600,200,cash,Walk-in,paid
+1041,2024-07-24,Wednesday,30,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,cash,Walk-in,paid
+1042,2024-07-24,Wednesday,30,7,Flour (Atta),Grocery,6,kg,70,80,480,60,cash,Walk-in,paid
+1043,2024-07-24,Wednesday,30,7,Flour (Atta),Grocery,9,kg,70,80,720,90,cash,Walk-in,paid
+1044,2024-07-24,Wednesday,30,7,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+1045,2024-07-24,Wednesday,30,7,Chips (Lays),Beverages,5,pack,30,40,200,50,cash,Walk-in,paid
+1046,2024-07-25,Thursday,30,7,Bread,Bakery,9,pcs,50,60,540,90,udhar,Tariq Bhai,paid
+1047,2024-07-25,Thursday,30,7,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+1048,2024-07-25,Thursday,30,7,Biscuits,Bakery,3,pack,40,50,150,30,udhar,Ahmed Raza,pending
+1049,2024-07-25,Thursday,30,7,Eggs,Dairy,13,pcs,20,25,325,65,cash,Walk-in,paid
+1050,2024-07-25,Thursday,30,7,Chips (Lays),Beverages,5,pack,30,40,200,50,udhar,Usman Store,pending
+1051,2024-07-25,Thursday,30,7,Matches,Household,1,box,5,10,10,5,udhar,Fatima Bibi,pending
+1052,2024-07-26,Friday,30,7,Sugar,Grocery,12,kg,90,100,1200,120,cash,Walk-in,paid
+1053,2024-07-26,Friday,30,7,Milk,Dairy,6,litre,180,200,1200,120,cash,Walk-in,paid
+1054,2024-07-26,Friday,30,7,Bread,Bakery,17,pcs,50,60,1020,170,cash,Walk-in,paid
+1055,2024-07-26,Friday,30,7,Rice (Basmati),Grocery,22,kg,280,320,7040,880,cash,Walk-in,paid
+1056,2024-07-26,Friday,30,7,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Sara Khan,pending
+1057,2024-07-26,Friday,30,7,Biscuits,Bakery,3,pack,40,50,150,30,cash,Walk-in,paid
+1058,2024-07-26,Friday,30,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,cash,Walk-in,paid
+1059,2024-07-26,Friday,30,7,Flour (Atta),Grocery,14,kg,70,80,1120,140,udhar,Usman Store,pending
+1060,2024-07-26,Friday,30,7,Flour (Atta),Grocery,16,kg,70,80,1280,160,cash,Walk-in,paid
+1061,2024-07-26,Friday,30,7,Eggs,Dairy,21,pcs,20,25,525,105,cash,Walk-in,paid
+1062,2024-07-26,Friday,30,7,Butter,Dairy,4,pcs,120,140,560,80,cash,Walk-in,paid
+1063,2024-07-26,Friday,30,7,Salt,Grocery,5,kg,20,30,150,50,udhar,Sara Khan,overdue
+1064,2024-07-26,Friday,30,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+1065,2024-07-27,Saturday,30,7,Bread,Bakery,14,pcs,50,60,840,140,cash,Walk-in,paid
+1066,2024-07-27,Saturday,30,7,Rice (Basmati),Grocery,22,kg,280,320,7040,880,cash,Walk-in,paid
+1067,2024-07-27,Saturday,30,7,Cooking Oil,Grocery,6,litre,480,530,3180,300,cash,Walk-in,paid
+1068,2024-07-27,Saturday,30,7,Cooking Oil,Grocery,4,litre,480,530,2120,200,cash,Walk-in,paid
+1069,2024-07-27,Saturday,30,7,Cooking Oil,Grocery,4,litre,480,530,2120,200,cash,Walk-in,paid
+1070,2024-07-27,Saturday,30,7,Biscuits,Bakery,6,pack,40,50,300,60,udhar,Usman Store,paid
+1071,2024-07-27,Saturday,30,7,Soap (Lifebuoy),Household,1,pcs,70,90,90,20,udhar,Ahmed Raza,pending
+1072,2024-07-27,Saturday,30,7,Eggs,Dairy,31,pcs,20,25,775,155,cash,Walk-in,paid
+1073,2024-07-27,Saturday,30,7,Eggs,Dairy,24,pcs,20,25,600,120,udhar,Tariq Bhai,pending
+1074,2024-07-27,Saturday,30,7,Butter,Dairy,4,pcs,120,140,560,80,cash,Walk-in,paid
+1075,2024-07-27,Saturday,30,7,Butter,Dairy,4,pcs,120,140,560,80,cash,Walk-in,paid
+1076,2024-07-27,Saturday,30,7,Salt,Grocery,3,kg,20,30,90,30,cash,Walk-in,paid
+1077,2024-07-27,Saturday,30,7,Salt,Grocery,5,kg,20,30,150,50,udhar,Sara Khan,paid
+1078,2024-07-27,Saturday,30,7,Matches,Household,1,box,5,10,10,5,cash,Walk-in,paid
+1079,2024-07-28,Sunday,30,7,Milk,Dairy,4,litre,180,200,800,80,cash,Walk-in,paid
+1080,2024-07-28,Sunday,30,7,Bread,Bakery,14,pcs,50,60,840,140,udhar,Bilal Hardware,overdue
+1081,2024-07-28,Sunday,30,7,Rice (Basmati),Grocery,14,kg,280,320,4480,560,cash,Walk-in,paid
+1082,2024-07-28,Sunday,30,7,Cooking Oil,Grocery,3,litre,480,530,1590,150,cash,Walk-in,paid
+1083,2024-07-28,Sunday,30,7,Cooking Oil,Grocery,4,litre,480,530,2120,200,cash,Walk-in,paid
+1084,2024-07-28,Sunday,30,7,Juice (Nestle),Beverages,1,pack,80,100,100,20,udhar,Tariq Bhai,pending
+1085,2024-07-28,Sunday,30,7,Flour (Atta),Grocery,12,kg,70,80,960,120,cash,Walk-in,paid
+1086,2024-07-28,Sunday,30,7,Eggs,Dairy,19,pcs,20,25,475,95,cash,Walk-in,paid
+1087,2024-07-28,Sunday,30,7,Butter,Dairy,2,pcs,120,140,280,40,udhar,Tariq Bhai,pending
+1088,2024-07-28,Sunday,30,7,Salt,Grocery,1,kg,20,30,30,10,cash,Walk-in,paid
+1089,2024-07-29,Monday,31,7,Sugar,Grocery,6,kg,90,100,600,60,cash,Walk-in,paid
+1090,2024-07-29,Monday,31,7,Bread,Bakery,16,pcs,50,60,960,160,udhar,Sara Khan,paid
+1091,2024-07-29,Monday,31,7,Rice (Basmati),Grocery,14,kg,280,320,4480,560,cash,Walk-in,paid
+1092,2024-07-29,Monday,31,7,Cooking Oil,Grocery,2,litre,480,530,1060,100,udhar,Fatima Bibi,pending
+1093,2024-07-29,Monday,31,7,Biscuits,Bakery,4,pack,40,50,200,40,udhar,Fatima Bibi,pending
+1094,2024-07-29,Monday,31,7,Flour (Atta),Grocery,10,kg,70,80,800,100,cash,Walk-in,paid
+1095,2024-07-29,Monday,31,7,Eggs,Dairy,12,pcs,20,25,300,60,cash,Walk-in,paid
+1096,2024-07-29,Monday,31,7,Salt,Grocery,2,kg,20,30,60,20,cash,Walk-in,paid
+1097,2024-07-29,Monday,31,7,Chips (Lays),Beverages,7,pack,30,40,280,70,cash,Walk-in,paid
+1098,2024-07-29,Monday,31,7,Chips (Lays),Beverages,8,pack,30,40,320,80,cash,Walk-in,paid
+1099,2024-07-30,Tuesday,31,7,Sugar,Grocery,6,kg,90,100,600,60,udhar,Sara Khan,pending
+1100,2024-07-30,Tuesday,31,7,Sugar,Grocery,5,kg,90,100,500,50,cash,Walk-in,paid
+1101,2024-07-30,Tuesday,31,7,Milk,Dairy,9,litre,180,200,1800,180,udhar,Ahmed Raza,pending
+1102,2024-07-30,Tuesday,31,7,Bread,Bakery,12,pcs,50,60,720,120,cash,Walk-in,paid
+1103,2024-07-30,Tuesday,31,7,Rice (Basmati),Grocery,18,kg,280,320,5760,720,udhar,Ahmed Raza,paid
+1104,2024-07-30,Tuesday,31,7,Biscuits,Bakery,1,pack,40,50,50,10,udhar,Fatima Bibi,pending
+1105,2024-07-30,Tuesday,31,7,Eggs,Dairy,18,pcs,20,25,450,90,cash,Walk-in,paid
+1106,2024-07-30,Tuesday,31,7,Salt,Grocery,4,kg,20,30,120,40,cash,Walk-in,paid
+1107,2024-07-30,Tuesday,31,7,Chips (Lays),Beverages,3,pack,30,40,120,30,cash,Walk-in,paid
+1108,2024-07-31,Wednesday,31,7,Sugar,Grocery,4,kg,90,100,400,40,cash,Walk-in,paid
+1109,2024-07-31,Wednesday,31,7,Milk,Dairy,3,litre,180,200,600,60,cash,Walk-in,paid
+1110,2024-07-31,Wednesday,31,7,Milk,Dairy,5,litre,180,200,1000,100,udhar,Sara Khan,paid
+1111,2024-07-31,Wednesday,31,7,Milk,Dairy,2,litre,180,200,400,40,udhar,Sara Khan,overdue
+1112,2024-07-31,Wednesday,31,7,Bread,Bakery,13,pcs,50,60,780,130,cash,Walk-in,paid
+1113,2024-07-31,Wednesday,31,7,Rice (Basmati),Grocery,15,kg,280,320,4800,600,udhar,Usman Store,paid
+1114,2024-07-31,Wednesday,31,7,Rice (Basmati),Grocery,11,kg,280,320,3520,440,cash,Walk-in,paid
+1115,2024-07-31,Wednesday,31,7,Flour (Atta),Grocery,11,kg,70,80,880,110,udhar,Fatima Bibi,overdue
+1116,2024-07-31,Wednesday,31,7,Eggs,Dairy,6,pcs,20,25,150,30,cash,Walk-in,paid
+1117,2024-07-31,Wednesday,31,7,Salt,Grocery,3,kg,20,30,90,30,udhar,Bilal Hardware,pending
+1118,2024-07-31,Wednesday,31,7,Chips (Lays),Beverages,6,pack,30,40,240,60,cash,Walk-in,paid
+1119,2024-07-31,Wednesday,31,7,Chips (Lays),Beverages,1,pack,30,40,40,10,udhar,Tariq Bhai,pending
